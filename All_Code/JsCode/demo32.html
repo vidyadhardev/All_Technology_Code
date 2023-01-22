@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+p
+{
+height:45px;
+width:200px;
+background:#efefef;
+//background:url("image\ceptcha.jpg");
+font-size:35px;
+line-height:45px;
+letter-spacing:12px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<p><s>v4Xy0a</s></p><img onclick="demo()"style="height:40px;position:absolute;left:230px;top:10px;" src="D:\Offline java Script\image\refresh.webp"/>
+<input type="text" /><br/><br/>
+<button onclick="demo1()">SAVE</button>
+<script>
+function demo()
+{
+var str ="qwertyuiopasdfghjklz%^&*xcvbnm123456@#$7890"
+var len=str.length
+//alert(len)
+var captcha=""
+for (var i=0;i<=7;i++);
+{
+var rIndex=Math.floor(Math.random()*39)
+//alert(rIndex)
+//var rChar=str[rIndex]
+var rChar=str.CharAt(rIndex)
+captcha=captcha+rChar
+}
+document.querySelector("s").innerText=captcha
+}
+function demo1()
+{
+var c=document.querySelector("s")
+var v=document.querySelector("input")
+var msg=document.querySelector("b")
+if(c.innerText==v.value)
+{
+c.style.border="4px solid green"
+v.style.border="4px solid green"
+msg.innerText="Vailed Enter captcha"
+msg.style.color="green"
+v.style.borderRadius="3px"
+c.style.borderRadius="3px"
+}
+else
+{
+c.style.border="4px solid red"
+v.style.border="4px solid red"
+msg.innerText="Invailed Enter captcha"
+msg.style.color="red"
+v.style.borderRadius="3px"
+c.style.borderRadius="3px"
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Object Mathod</title>
+</head>
+<body>
+    <script>
+var  studentInfoArr=[
+    {
+        name:"vidya dhar",
+        age:21,
+        city:" Lakhimpur Kheri",
+        Branch:"C.S.E",
+        pic:"vidya12.jpg"
+    },
+    {
+        name:"Amit ",
+        age:23,
+        city:"Kheri",
+        Branch:"C.S.E",
+        pic:"vidya4.jpg"
+    },
+    {
+        name:"Golua",
+        age:22,
+        city:"Kheri",
+        Branch:"C.S.E",
+        pic:"vidya5.jpg"
+    },
+    {
+        name:"Sumit Verma",
+        age:21,
+        city:"Lakhimpur(Kheri)",
+        Branch:"C.S.E",
+        pic:"vidya10.jpg"
+    }
+    
+]
+//document.write(
+//     console.log(
+// studentInfoArr[1].name,
+// studentInfoArr[0].age,
+// studentInfoArr[1].city,
+// studentInfoArr[2].Branch,
+// studentInfoArr[2].name,
+// studentInfoArr[1].age,
+// studentInfoArr[3].city,
+// studentInfoArr[1].Branch
+// )
+var res="<table border='1'>"
+    studentInfoArr.forEach((data)=>{
+        res+=`
+        <tr>
+            <td>${data.name}</td>
+            <td>${data.age}</td>
+            <td>${data.city}</td>            
+            <td>${data.Branch}</td>
+            <td><img src="image/${data.pic}" height='70px' width="50px"/></td>
+            </tr>
+        `
+    })
+    res+="</table>";
+        document.write(res)
+
+    </script>
+</body>
+</html>

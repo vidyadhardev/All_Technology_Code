@@ -1,0 +1,31 @@
+img
+{
+height:300px;
+width:300px;
+border:10px DOUBLE yellow;
+font-size:80px;
+
+
+}
+figure
+{
+width:360px;
+	border:12px groove aqua;
+	background:purple;
+	height:98px;
+	width:400p;
+	font-size:10px;
+	padding:10px;
+	margin:-10px;
+	text-align:center;
+}
+figcaption
+{
+	border:12px groove aqua;
+	background:yellow;
+	height:50px;
+	width:335px;
+	font-size:26px;
+	padding:10px;
+	text-align:center;
+}

@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+* /* universal selector*/
+{
+color:red !important;
+font-family:Agency FB;
+}
+p{
+color:yellow;
+}
+p::selection
+{
+background:yellow;
+color:navy;
+}i::selection
+{
+background:maroon;
+color:gold;
+}b::selection
+{
+background:green;
+color:orange;
+}
+input[type="text"]::placeholder
+{
+color:red;
+}
+input[type="email"]::placeholder
+{
+color:yellow;
+}
+</style>
+</head>
+<body>
+<input type="text" placeholder="username"/>
+<input type="email" placeholder="enter mail"/>
+<p>This site can’t be reachedwww.google.com’s server IP address could not be found.
+Try:
+
+Checking the connection
+Checking the proxy, firewall and DNS configuration
+Running Windows Network Diagnostics
+ERR_NAME_NOT_RESOLVED</p>
+
+<b>This site can’t be reachedwww.google.com’s server IP address could not be found.
+Try:
+Checking the connection
+Checking the proxy, firewall and DNS configuration
+Running Windows Network Diagnostics
+ERR_NAME_NOT_RESOLVED</b><br/>
+
+<i>This site can’t be reachedwww.google.com’s server IP address could not be found.
+Try:
+Checking the connection
+Checking the proxy, firewall and DNS configuration
+Running Windows Network Diagnostics
+ERR_NAME_NOT_RESOLVED</i><br/>
+
+<em>This site can’t be reachedwww.google.com’s server IP address could not be found.
+Try:
+Checking the connection
+Checking the proxy, firewall and DNS configuration
+Running Windows Network Diagnostics
+ERR_NAME_NOT_RESOLVED</em><br/>
+</body>
+</html>

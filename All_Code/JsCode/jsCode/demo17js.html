@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+<input type="text" value="Vidyadhar" id ="txt1"/><br/>
+<input type="text" value="vidya " id ="txt2"/><br/>
+<button onclick="demo1()">SWAP VALUE</button>
+<script>
+function demo()
+{
+var t1=document.querySelector("#txt1")
+var t2=document.querySelector("#txt2")
+var v1=t1.value;
+var v2=t2.value;
+t1.value=v2
+t2.value=v1
+
+}
+let demo1=()=>
+{
+window.setTimeout(demo,2000)
+}
+</script>
+</body>
+</html>

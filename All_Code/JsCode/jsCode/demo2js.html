@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+First no:<br/><input type="text" id="txt1"/><br/>
+second no:<br/><input type="text" id="txt2"/><br/><br/>
+<p id="msg"></p>
+<button onclick="add()">Add</button>
+<script>
+function add()
+{
+<!-- alert("ok") -->
+var num1=document.getElementById("txt1").value
+var num2=document.getElementById("txt2").value
+<!-- var res=parseInt(num1)+parseInt(num2) -->//number is integer
+<!-- var res=parseFloat(num1)+parseFloat(num2) -->//number is floating
+var res=Number(num1)+Number(num2)//as a input
+<!-- document.write("Your Result is---  "+res) -->
+document.getElementById("msg").innerText="Your Result is---"+res;
+document.getElementById("msg").style.color="orange"
+document.getElementById("msg").style.backgroundColor="whitesmoke"
+}
+</script>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            IMAGE SWEP IN 5 SECONDS USING JAVASCRIPT
+        </title>
+        <style>
+img
+{
+    height: 300px;
+    width: 300px;
+    border: 5px double yellow;
+    border-radius: 15px;
+    box-shadow:2px 5px 4px 5px inset red;
+    margin: 10px;
+}
+        </style>
+    </head>
+    <body>
+      
+        
+        <img src="D:\html file\instagram1.jfif" id="img1">
+        <img src="D:\Offline java Script\image\study14.jfif" id="img2">
+        <img src="D:\Offline java Script\image\study13.jfif" id="img3">
+        <img src="D:\Offline java Script\image\study10.jfif" id="img4">
+        <img src="D:\Offline java Script\image\study11.jfif" id="img5">
+        <img src="D:\Offline java Script\image\study12.jfif" id="img6">
+        <input type="button" value="click to swep" >
+        <script>
+         var sewp=()=>
+        {
+         var im1=document.querySelector("#img1")
+         var im2=document.querySelector("#img2")
+         var im3=document.querySelector("#img3")
+         var im4=document.querySelector("#img4")
+         var im5=document.querySelector("#img5")
+         var im6=document.querySelector("#img6")
+        
+
+          im1.src=img6.src;
+          im2.src=img3.scr;
+          im3.src=img4.src;
+          im4.src=img5.scr;
+          im5.src=img2.src;
+          im6.src=img1.scr;
+         
+
+        }
+        window.setInterval(sewp,1000)
+         </script>
+    </body>
+</html>

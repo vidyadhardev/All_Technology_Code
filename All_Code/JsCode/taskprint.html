@@ -1,0 +1,51 @@
+<html>
+    <head>
+<style>
+    #top
+    {
+        min-height: 500px;
+        width: 400px;
+        background-color: antiquewhite;
+        border: 2px double red;
+        border-radius: 15px;
+        margin: 0px auto;
+    }
+</style>
+
+    </head>
+    <body>
+    name <BR/>
+    <input type="text" id="txt1"><br/>
+    mobile <br/>
+    <input type="number" id="txt2"><br/>
+    email<br/>
+    <input type="email"  id="txt3"><br/>
+   message<br/>
+   <textarea cols="20" rows="3" placeholder="send your feedback" id="txt4" style="font-size :15px;"></textarea><BR/><BR/>
+  <input type="button"onclick="demo()" value="GET VALUE">
+<DIV>
+<p></p>
+
+</DIV><br/>
+<button onclick="demo1()" >Print Data</button>
+   <script>
+    function demo()
+    {
+
+        var name=document.querySelector("#txt1").value
+        var mobile=document.querySelector("#txt2").value
+        var email=document.querySelector("#txt3").value
+        var message=document.querySelector("#txt4").value
+        var dv= document.querySelector("div").innerText=`Name is :${name}<br/>Mobile no. is : ${mobile}<br/> E-mail is :${email}<br/> Message is : ${message}`
+    
+        
+    }
+    function demo1()
+    {
+        var dvalue=document.querySelector("div").innerText
+        document.body.innerHTML=dvalue
+        window.print()
+    }
+   </script>    
+    </body>
+</html>

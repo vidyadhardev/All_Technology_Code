@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage App</title>
+</head>
+<body>
+    <h1></h1>
+    <form method="post" onsubmit="return register(event);">
+        RollNo : 
+        <p><input type="text" name="roll" id="roll" value="1001" readonly></p>
+        Name :
+        <p> <input type="text" name="name" id="name"></p>
+        Email : 
+        <p><input type="email" name="email" id="email"></p>
+        Password :
+        <p> <input type="password" name="password" id="password"></p>
+        Mobile :
+        <p> <input type="text" name="mobile" id="mobile"></p>
+        ImageUpload: 
+        <p><input type="file" name="pic" id="pic" onclick="upload(this)"></p>
+        <p><input type="submit" name="submit" id="submit"></p>
+    </form>
+
+    <script type="text/javascript" rel="javascript">
+
+        var Roll = 1001;
+        var collections = JSON.parse(window.localStorage.getItem('student_data')) || [];
+
+        (function(){
+            setRollno();
+        })();
+
+        function register(e){
+            
+            var users = {};
+            var keys = ['roll','name','email','password','mobile'];
+            var inputs = ['#roll','#name','#email','#password','#mobile'];
+            inputs.forEach((item,index)=>{
+                if(index == 0){
+                    users[keys[index]] = generateRollNo(collections);
+                }else{
+                    users[keys[index]] = $(item).value;
+                }n
+                
+            });
+
+            collections.push(users); //[]
+
+    window.localStorage.setItem('student_data',JSON.stringify(collections));
+             
+
+            inputs.forEach((item,index)=>{
+                $(item).value = "";
+            })
+
+            
+            setRollno();
+
+            return false;
+            
+            //return false;
+            
+        }
+
+
+        function setRollno(){
+            if(collections.length>0){
+                let maxIndex = (collections.length-1);
+                $("#roll").value  = Number(collections[maxIndex].roll)+1;
+            }else{
+                $("#roll").value  = Roll;
+            }
+
+        }
+
+        function generateRollNo(collections){
+            if(collections.length>0){
+                let maxIndex = (collections.length-1);
+                return Number(collections[maxIndex].roll)+1;
+            }
+            return Roll;
+           
+        }
+
+        function $(elementName){
+            return document.querySelector(elementName);
+        }
+
+
+        function upload(object){
+            console.log(object.fils[0])//file Blob object
+            //file reader class object
+        }
+    </script>
+
+</body>
+</html>

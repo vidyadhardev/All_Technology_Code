@@ -1,0 +1,45 @@
+<html>
+<head>
+ <script> 
+ var demo=()=> 
+{
+ document.getElementById("im1").src="D:\photos\js.jpg";
+var x=document.getElementById("im1")
+x.src="D:\photos\ap.jpg"
+ x.style.border="10px solid yellow"; 
+ x.style.borderRadius="15px";
+x.style.height="300px";
+ x.style.width="400px";
+}
+</script>
+<style>
+img
+{
+height:200px;
+width:200px;
+border:2px solid aqua;
+border-radius:15px;
+margin:10px;
+}
+</style>
+</head>
+<body>
+<!-- <img src="C:\Users\vidya dhar\Desktop\B612.jpg"/> -->
+<img src="D:\photos\B612.jpg"  id="im1"/>
+<img src="D:\photos\ap.jpg" id="im2"/>
+<button onclick="demo()">img swap</button>
+<!-- <script> -->
+/*var demo=()=>
+{
+var img1=document.getElementById("img1")
+var img2=document.getElementById("img2")
+var path1=img1.src;//D:\photos\B612.jpgv
+ar path2=img2.src;//D:\photos\ap.jpg
+img1.src=path2
+img2.src=path1
+}
+//window.setInterval(demo,1000)
+</script>*/
+
+</body>
+</html>

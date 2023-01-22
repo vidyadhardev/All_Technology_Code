@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <style>
+        img
+        {
+            height: 400px;
+            width: 400px;
+            border: 3px solid yellow;
+        }
+    </style>
+    </head>
+    <body>
+        <img src="D:\Offline java Script\car gif.gif" id="im1"><br>
+
+  <button onclick="vidya()" >Hide Image </button>
+  <script>
+    var vidya=()=>
+    {
+      var v=confirm("I'm Sure to hide Image")
+      if(v==true)
+      document.querySelector("img").style.display="none"
+    }
+  </script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+            #outer
+            {
+                min-height: 450px;
+                width: 400px;
+                background-color: bisque;
+                border:2px solid black;
+                border-radius: 10px;
+                margin: 0px auto;
+            }
+           .txt
+            {
+                
+              
+              height: 50px;
+                border-radius: 10px;
+               width: 350px;
+               margin-left: 20px;
+               margin-top:20px;
+               font-size: 20px;
+               border:2px solid red;
+            }
+        #center
+        {
+            margin-top: 30px;
+            font-size: 20px;
+            width: 350px;
+        }
+        .add1
+        {
+            margin-top: 30px;
+            font-size: 20px;
+            width: 190px;
+            height: 50px;
+           margin-left: 20px;
+           border-radius: 3px;
+           border:none;
+         
+        }
+        .a
+        {
+            height: 50px;
+            width: 50px;
+            float: left;
+            margin-left: 40px;
+            font-size: 30px;
+            background:linear-gradient(95deg,orange,yellow);
+            border-radius: 5px;
+            margin-top: 80px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <p id="top">
+                <input  type="number" id="n1" class="txt"><br/>
+            </p>
+                <p id="center">
+                    <input  type="number" id="n2" class="txt"><br/>
+                </p>
+        
+                <p id="add">
+                    <input  type="number"id="n3" onclick="demo()" class="add1"><br/>
+                </p>
+
+
+                <button onclick="vidya()" class="a" >+</button>
+                <button class="a">-</button>
+                <button class="a">X</button>
+                <button class="a">%</button>
+                
+        </div>
+        <script>
+            
+            
+
+            function vidya()
+            {
+             var x=document.querySelector("#n1")
+             var x1=document.querySelector("#n2")
+             var x3=document.querySelector("#n3")
+             document.querySelector("#n1")=x3
+            }
+        </script>
+
+
+    </body>
+</html>

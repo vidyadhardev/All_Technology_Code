@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object msg</title>
+</head>
+<body>
+    <script>
+        var obj={
+            Address:"Mumbai",
+            Company:"TCS",
+            showData()
+            {
+                document.write("Name" in  obj)
+                document.write("Company" in  obj)
+                document.write("address" in  obj)
+                document.write("Address" in  obj)
+            }
+        }
+       // obj.showData     if not use Parenthisis to print function object ,use compalsiry ()
+       obj.showData()
+    </script>
+</body>
+</html>

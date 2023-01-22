@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            #h
+            {
+                height: 400px;
+                width: 300px;
+            }
+
+        </style>
+    </head>
+    <body onload="love()">
+       <img src="D:\photos\1664039075927.jpg" alt="My" id="h">
+       <video class="a"  autoplay controls src="bajariya.mp4" poster="D:\html file\images\image11.jfif"
+loop="3" height="10px" width="10px"></video>
+        <button  onclick="vidya()" style="background: whitesmoke; color:rgb(186, 25, 146); border: radius 5px;;">set Style</button>
+        <script>
+            function love()
+            {
+                var m=document.getElementById("h")
+                m.style.color="red"
+           m.style.border="2px solid navy"
+           m.style.borderRadius="5px"
+           m.style.textAlign="center"
+           m.style.background="black"  
+            }
+            function vidya()
+            {
+           var m=document.getElementById("h")
+           m.style.color="yellow"
+           m.style.border="2px solid red"
+           m.style.borderRadius="15px"
+           m.style.textAlign="center"
+           m.style.background="gray"
+           m.style.transform="rotate(360deg)"
+           m.style.transition="20s"
+    
+            }
+
+        </script>
+       
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of object show Rows</title>
+    <link href="./css/all.css" rel="stylesheet"/>
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+</head>
+<body>
+    <p></p>
+    <div id=""box></div>
+    <div class="input-group" w-50 mx-auto>
+        <input type="text" onkeyup="dataSearch(this)" class="form-control" placeholder="Type & Seacrh Your Data Here..."/>
+<i class="input-group-text">Search</i>
+    </div>
+    <script>
+        var  studentInfoArr=[
+    {
+        name:"vidya dhar",
+        age:21,
+        city:" Lakhimpur Kheri",
+        Branch:"C.S.E",
+        Pic:"vidya13.jpg"
+    },
+    {
+        name:"Amit ",
+        age:23,
+        city:"Kheri",
+        Branch:"C.S.E",
+        Pic:"vidya14.jpg"
+    },
+    {
+        name:"Golua",
+        age:22,
+        city:"Kheri",
+        Branch:"C.S.E",
+        Pic:"vidya15.jpg"
+    },
+    {
+        name:"Sumit Verma",
+        age:21,
+        city:"Lakhimpur(Kheri)",
+        Branch:"C.S.E",
+        Pic:"vidya20.jpg"
+    }
+    
+]
+studentInfoArr.forEach((data)=>{
+ var res= "<table border='1' Rules='none'><tr><th>Sr_No.</th><th>Name</th><th>Age</th><th>City</th><th>Branch</th><th>Pic</th></tr>"
+    var Sr_No=0
+    studentInfoArr.forEach((data)=>{
+Sr_No++;
+res+=`
+
+<tr>
+    
+    </tr>
+`
+    })
+})
+function dataSearch()
+    </script>
+</body>
+</html>

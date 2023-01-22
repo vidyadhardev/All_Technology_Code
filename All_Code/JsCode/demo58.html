@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Use First letter capitalize ,other lowercas</title>
+</head>
+<body>
+<input type="text" autofocus  onkeyup="capitalize"/>
+<p></p>
+<input type="button" onclick="capitalize()" value="CONVERT"/>
+<script>
+function capitalize()
+{
+var x=document.querySelector("input").value
+var arr=x.spilt(" ")
+= ["vidya","vimala","Kamal"]
+var arr1=[]
+arr.forEach((d)=>{
+var x1=data[0].toUpperCase(0)+data.slice(1).toLowerCase(0)
+arr1.push(x1)
+})
+document.querySelector("p").innerText=arr1.join(" ")
+document.querySelector("input").value=arr1.join(" ")
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<script>
+var memo=()=>
+{
+var x=document.getElementById("alb1")
+var x=document.getElementById("alb2")
+x.src="D:\Js Code\images\image10.jfif"
+x.style.border="5px double red"
+x.style.borderRadius="15px"
+//x.style.boxShadow="3px 5px 2px 2px yellow,-2px -1px 2px 2px aqua"
+}
+</script>
+<style>
+img
+{
+height:400px;
+width:400px;
+border:3px double red;
+border-radius:15px;
+margin:5px;
+box-shadow:2px 3px 3px 2px red,-1px -2px 2px 2px orange;
+transition:all ease 3s;
+<!--#alb1:hover
+{
+height:380px;
+width:400px;
+border:2px groove aqua;
+margin:8px;
+box-shadow:5px 2px 6px 2px blue,2px 5px 2px lightgreen;
+transition:all ease 2s;
+}-->
+}
+</style>
+
+</head>
+<body>
+<img src="D:\Js Code\images\image10.jfif" id="alb1"/>
+<img src="D:\Js Code\images\image4.jfif" id="alb2"/>
+
+<img src="D:\Js Code\images\image7.jfif" id="alb3"/>
+<img src="D:\Js Code\images\img1.jpg" id="alb4"/>
+<img src="D:\Js Code\images\image15.jfif" id="alb5"/>
+<img src="D:\Js Code\images\image14.jfif" id="alb6"/>
+<img src="D:\Js Code\images\image10.jfif" id="alb7"/>
+<img src="D:\Js Code\images\vidya15.jpg" id="alb8"/>
+<img src="D:\photos\B612.jpg"  id="alb9"/>
+<img src="D:\photos\ap.jpg" id="alb10"/>
+
+<!--<button  onclick="memo1()" >click</button> -->
+<script>
+ var memo1=()=>
+ {
+ var al1=document.getElementById("alb1")
+ var al2=document.getElementById("alb2")
+ //alert (al1+"||" +al2);
+var al3=document.getElementById("alb3")
+ var al4=document.getElementById("alb4")
+ var al5=document.getElementById("alb5")
+ var al6=document.getElementById("alb6")
+ var al7=document.getElementById("alb7")
+ var al8=document.getElementById("alb8")
+ var al9=document.getElementById("alb9")
+ var al10=document.getElementById("alb10")
+ 
+ var path1=al1.src;
+ var path2=al2.src;
+ var path3=al3.src;
+ var path4=al4.src;
+ var path5=al5.src;
+ var path6=al6.src;
+ var path7=al7.src;
+ var path8=al8.src;
+ var path9=al9.src;
+ var path10=al10.src;
+ 
+ al1.src=path3
+ al2.src=path6
+ al3.src=path5
+ al4.src=path8
+ al5.src=path7
+ al6.src=path2
+ al7.src=path9
+ al8.src=path4
+ al9.src=path10
+ al10.src=path1
+ 
+
+ }
+window.setInterval(memo1,2000)
+</script>
+</body>
+</html>

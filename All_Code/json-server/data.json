@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "name": "Zon Zufar",
+      "email": "Zufar32@gmail.com",
+      "mobile": "876543456",
+      "password": "Zufar12345678",
+      "users": [],
+      "msg": "",
+      "id": 24
+    },
+    {
+      "name": "Tanya Singh",
+      "email": "Tanya@gmail.com",
+      "mobile": "456789976",
+      "password": "Tanya4567",
+      "users": [],
+      "msg": "",
+      "id": 25
+    },
+    {
+      "name": "Shukha singh",
+      "email": "shukha@gmail.com",
+      "mobile": "678906543",
+      "password": "Sukha5678",
+      "users": [],
+      "msg": "",
+      "id": 26
+    },
+    {
+      "name": "Mark Zuker",
+      "email": "Burg@gmail.com",
+      "mobile": "+098876",
+      "password": "45mark",
+      "id": 27
+    },
+    {
+      "name": "Ziyan Khan india",
+      "email": "Khan@gmail.com",
+      "mobile": "5665656565",
+      "password": "Vbhbych",
+      "id": 28
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": " Parle",
+      "email": "gyanvi38@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "name": "gul",
+      "email": "gul@gmail.com",
+      "mobile": "34567899876",
+      "password": "vbn",
+      "users": [],
+      "msg": "",
+      "id": "ejIYUaz"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<html>
+    <head>
+<style>
+    img{
+        height: 300px;
+        width: 300px;
+        border: 2px solid red;
+        border-radius: 10px;
+
+    }
+</style>
+    </head>
+    <body>
+        <img src="D:\html file\instagram1.jfif" id="img1">
+        <img src="D:\Offline java Script\image\study14.jfif" id="img2">
+        <img src="D:\Offline java Script\image\study13.jfif" id="img3">
+        <img src="D:\Offline java Script\image\study10.jfif" id="img4">
+    <p>
+
+    </p>
+        <button onclick="demo()">click to get img</button>
+        <script>
+            function demo()
+            {
+                alert(document.images)
+                //var i=document.images  //HTMLCollectio 
+               // var i=document.images.item(2).src
+               // var i=document.images.namedItem("img2").src  
+               var i=document.images.namedItem("img2").src="D:\html file\images\download (3).jfif" 
+                
+            }
+        </script>
+    </body>
+</html>

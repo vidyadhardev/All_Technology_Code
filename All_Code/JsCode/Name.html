@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>using name</title>
+    </head>
+    <body>
+        <p name="a">HTML</p>
+        <P name="b">CSS</P>
+        <P name="a">JQUERY</P>
+        <P name="b">REACT JS</P>
+        <div></div>
+           <button onclick="demo()">CLICK HERE</button>
+        <script>
+     function demo()
+        {
+           var x=document.getElementsByName("a")
+           var r="<select>"
+           x.forEach((c)=>{
+            r="<option>"+c.innerText+"</option"
+           })
+             r+="</select>"
+            document.querySelector("div").innerHTML=r;
+        }
+        </script>
+    </body>
+</html>

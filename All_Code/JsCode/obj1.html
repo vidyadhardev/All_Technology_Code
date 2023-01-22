@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object1</title>
+</head>
+<body>
+    <script>
+    var obj1={
+        cit:"Lakhimpur Kheri",
+        Pin:261506
+    }
+    var obj={
+        name:"Vidya dhar maurya",
+        age:21,
+        salary:60000,
+        demo()
+        {
+    document.write(
+        `
+        City:${obj1.cit} <p>
+        PinCode:${obj1.Pin}<p>
+        ` )
+        }
+    }
+    document.write(
+        `
+        <p>Emp Details</p>
+        Name is :${obj.name}<p>
+        Person Age :${obj.age}<p>
+        Person Salery :${obj.salary}<p>
+        `)
+    obj.demo()
+    </script>
+</body>
+</html>

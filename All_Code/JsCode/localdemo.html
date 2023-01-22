@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage App data</title>
+</head>
+<body>
+    <form method="post" onsubmit="return register(event);">
+        Name
+    <input type="text" autofocus placeholder="Name" id="n1" /><br><br>
+    Mobile
+    <input type="text" placeholder="Mobile no." id="m2"><br><br>
+    Roll No.
+    <input type="text" placeholder="Roll number" id="roll" value="1001"readonly><br><br>
+    E-mail
+    <input type="e-mail" placeholder="E-mail" id="e3"><br><br>
+    Password
+    <input type="password" placeholder="password" id="p4"><br><br><br>
+
+   <input type="submit" name="submit" id="submit"/>
+  </form>
+   <script type="text/javascript" rel="javascript">
+
+    //e.preventDefault()
+    
+    const roll = 1001;
+    var collections = JSON.parse(window.localStorage.getItem('student_data')) || [];
+
+    (function(){
+      setRollno();
+    })();
+
+    function register(e){
+    var users={};
+    var keys=['name','mobile','email','roll','password'];
+    var inputs=['#name','#mobile','#email','#roll','#password'];
+          inputs.forEach((item,index)=>{
+            if(index ==0){
+             users[keys[index]]=generateRollNo(collections);
+            }
+          else{
+            users[keys[index]]=$(item).Value;
+          }
+         });
+   collections.push(users);    //[] first starting loop in to empty array
+  window.localStorage.setItem('student_data',JSON.stringify(collections));
+  inputs.forEach((item,index)=>{
+    $(item).Value="";
+  });
+    //document.querySelector('#form').submit(); //if apply to not submit
+    
+    setRollno();
+    return false;
+}
+function setRollno(){
+  if(collections.lengt>0){
+        let maxIndex=(collections.length-1);
+        $('#roll').Value=Number(collections[maxIndex].roll)+1;
+    }
+    else{
+      $('#roll').Value=roll;
+    }
+}   
+  function generateRollNo(collections){
+    if(collections.lengt>0){
+        let maxIndex=(collections.length-1);
+        return Number(collections[maxIndex].roll)+1;
+    }
+   return Roll;
+  }
+function $(elementName){
+    return document.querySelector(elementName);
+   }
+   </script>
+
+</body>
+</html>

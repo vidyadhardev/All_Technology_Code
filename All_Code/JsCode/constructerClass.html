@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor class Mathodes</title>
+</head>
+<body>
+    <script>
+        class EmpInfoCmp
+        {
+            constructor(name,age,Univercity,city)
+            {
+              this.Name=name
+              this.Age=age
+              this.Univercity=Univercity
+              this.city=city
+            }
+            Data_Show()
+            {
+                //console.log
+                document.write(`
+                                Name:${this.Name}
+
+                                Age:${this.Age}
+
+                                Univercity:${this.Univercity}
+                                
+                                District:${this.city}
+                          `)
+            }
+        }
+        var all_Data=new EmpInfoCmp("Vidya dhar maurya ",21,"B.H.U.","Lakhimpur Kheri")
+      all_Data.Data_Show()
+
+      var all_Data2=new EmpInfoCmp("Abhay maurya ",21,"B.H.U."," ShahajhanPur")
+      all_Data2.Data_Show()
+    </script>
+    
+</body>
+</html>

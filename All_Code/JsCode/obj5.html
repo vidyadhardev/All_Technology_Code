@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj use in array</title>
+</head>
+<body>
+    <script>
+         var objget={
+            Name:"Vidya dhar maurya",
+            Salary:80000,
+            Age:21,
+            Address:"Mumbai",
+            Company:"TCS",
+         }
+         for(var i in objget){
+         console.log(
+            `
+            Value of ${i} is : ${objget[i]}
+            `
+         )
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Image =><input type="file" onchange="Image(this);"/></p>
+    <img src="" alt="">
+    </form>
+
+    <script>
+
+        function Image(obj){
+           // Object.files[0];
+          var reader=new FileReader();
+
+          reader.addEventListener('load',function(){
+            document.querySelector('images').src=reader.result;
+            window.localStorage.setItem('img',reader.result);
+            
+
+          });
+        }
+    </script>
+</body>
+</html>

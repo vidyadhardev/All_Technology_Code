@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            img
+            {
+                height: 200px;
+                width: 200px;
+                border: 5px solid red;
+            }
+        </style>
+    </head>
+    <body>
+  <img src="D:\Offline java Script\car gif.gif" id="im1">
+  <img src="D:\Offline java Script\collage logo bl.png" id="im2">
+  <button onclick="vidya()">click me </button>
+    <script>
+        function vidya()
+        {
+            var i1=document.querySelector("#im1")
+            var i2=document.querySelector("#im2")
+            i2.scr=i1.src
+        }
+    </script>
+
+    </body>
+</html>

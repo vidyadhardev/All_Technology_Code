@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Vidya Dhar",
+      "email": "vidyadhar9076944738@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "id": "2",
+      "name": "Anshu verma",
+      "email": "anshu85420@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "id": "3",
+      "name": "Maurya ji",
+      "email": "abhay@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "id": "4",
+      "name": "Krashna yadav",
+      "email": "Krashna@gmail.com",
+      "mobile": "9076944738"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": " CreamRoll",
+      "email": "gyanvi38@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "id": "2",
+      "name": " Samose",
+      "email": "JivanLal@gmail.com",
+      "mobile": "9076944738"
+    },
+    {
+      "id": "3",
+      "name": " SoftwearSeller",
+      "email": "Vidya@gmail.com",
+      "mobile": "9076944738"
+    }
+  ]
+}

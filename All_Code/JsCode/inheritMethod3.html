@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Inheritance Methodes 3nd</title>
+</head>
+<body>
+    <script>
+        class test{
+            constructor(name,age)
+            {
+                this.name="Vidya dhar"
+                this.age=21
+                
+                //console.log("this is test constructor")
+            }
+            showData1(){
+                // console.log(`
+                // name:${this.name};
+                // Age:${this.age}
+                // `)
+                return`
+                Name =${this.name};
+                Age =${this.age};
+                `
+            }
+        }
+        class child extends test{
+            constructor()
+            {
+                super();
+                this.salary=5678
+            }
+            showData2()
+            {
+                console.log(
+                    `
+                 ${super.showData1()}  
+                Salary ${this.salary}                                          
+                
+                    `
+                
+                )
+            }
+        }
+        class child2 extends test{
+            constructor()
+            {
+                super();
+                this.city="lmp"
+            }
+            showData3()
+            {
+                console.log(
+                    `
+                 ${super.showData1()}  
+                Salary ${this.salary}                                          
+                
+                    `
+                
+                )
+            }
+        }
+        
+        var obj=new child()
+        obj.showData2()
+        var obj2=new child2()
+        
+        
+    </script>
+</body>
+</html>

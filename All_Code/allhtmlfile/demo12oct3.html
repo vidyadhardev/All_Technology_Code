@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>PREECEDENCE OF SELECTOR</title>
+<style>
+h1
+{
+color:red;
+background:yellow; //  selctor low priority
+}
+#a
+{
+color:silver !important;
+background:navy; // all selctor high priority
+}
+.b
+{
+color:yellow;
+background:green ! important; //  selctor priority second  //id>class>tag
+}
+</style>
+
+</head>
+<body>
+<hr/>
+<H1 id="a" class="b">PREECEDENCE OF SELECTOR</H1>
+<hr/>
+</body>
+</html>

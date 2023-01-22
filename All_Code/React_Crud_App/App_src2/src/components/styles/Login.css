@@ -1,0 +1,14 @@
+.bgStyle
+{
+    background-color: orange;
+   margin-top:50px;
+   width: 600px;
+   margin-left: 450px;
+   min-height: 600px;
+   border-radius: 10px;
+   box-shadow: 1px 1px 8px 1px red,1px 1px 5px 1px black inset;
+}
+.pdd
+{
+    margin-top: 40px;
+}

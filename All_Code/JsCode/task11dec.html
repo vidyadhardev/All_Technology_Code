@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+Apply for : <br/>
+<br/>
+<select chane="demo()">
+<option selected>--SELECT ONE OPTION--</option>
+<option>summer training</option>
+<option>industrial training</option>
+<option>Apprenticship</option>
+<option>winter</option>
+</select>
+<script>
+function demo()
+{
+ var x=document.querySelector("select").value
+alert("this.value")
+this.border="3px solid yellow"
+this.borderRadius="10px"
+}
+document.querySelector("select").addEventListener("change",demo)
+/*document.querySelector("select").addEventListener("change",function(){
+alert(this.value)
+})*/
+
+</script>
+</body>
+</html>

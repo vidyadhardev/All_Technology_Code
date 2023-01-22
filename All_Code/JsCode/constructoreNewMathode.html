@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor Mathodes</title>
+</head>
+<body>
+    <script>
+          class vidya{
+            constructor()
+            {
+                this.Name="Vidya Dhar",
+                this.Age=21,
+                this.Univercity="Techpile Technology pvt.ltd.",
+                this.city="Lakhimpur"
+            }
+            showData()
+            {
+                //this instance (variable)value ,data access from constructor 
+                console.log(`
+                Name:${this.Name}
+                Name:${this.Age}
+                Name:${this.Univercity}
+                Name:${this.city}
+                `)
+            }
+        }
+        var data=new vidya()
+        console.log(data)
+    </script>
+</body>
+</html>

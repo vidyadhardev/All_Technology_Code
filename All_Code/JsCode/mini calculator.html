@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            #outer
+            {
+                min-height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 20px;
+        border:2px solid black;
+        background-color: bisque;
+        margin: 0px auto;
+            }
+            .m
+    {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 8px;
+        margin-bottom: 5px;
+    }
+
+            .btn
+    {
+        width: 20%;
+        height: 35px;
+        border-radius: 5px;
+        margin: 5px;
+        background-color: rgb(182, 197, 47);
+    }
+    .btm
+    {
+        width: 50%;
+        height: 35px;  
+        border-radius: 5px;
+        margin: 10px;
+    }
+     
+        </style>
+    </head>
+    <body>
+        <script>
+        function add()
+      {
+        var  x=document.getElementById("txt1").value
+        var  y=document.getElementById("txt2").value
+         var res=parseInt(x)+ parseInt(y)
+        document.getElementById("txt3").value=res;
+        var add=confirm("plases click on ok or cancel button")
+        if(res==true)
+        alert("you clicked on ok ")
+        else
+        alert("you cliecked on concel buttom")
+      }
+      function sub()
+      {
+        var  x=document.getElementById("txt1").value
+        var  y=document.getElementById("txt2").value
+         var res=parseInt(x)- parseInt(y)
+        document.getElementById("txt3").value=res;
+      }
+      function mul()
+      {
+        var  x=document.getElementById("txt1").value
+        var  y=document.getElementById("txt2").value
+         var res=parseInt(x)*parseInt(y)
+        document.getElementById("txt3").value=res;
+      }
+      function div()
+      {
+        var  x=document.getElementById("txt1").value
+        var  y=document.getElementById("txt2").value
+         var res=parseInt(x)/parseInt(y)
+        document.getElementById("txt3").value=res;
+      }
+        </script>
+    </body>
+    <div id="outer"><br><br>
+        <input type="text" placeholder="enter the first number" class="m" id="txt1"/><br><br>
+        <input type="text" placeholder="enter the first number" class="m" id="txt2"/><br><br>`
+        <input type="text" class="btm" id="txt3"/><br><br>
+        <button type="button" class="btn" onclick="add()" value="+">+</button>
+        <button type="button" class="btn" onclick="sub()" value="-">-</button>
+        <button type="button" class="btn" onclick="mul()" value="*">*</button>
+        <button type="button" class="btn" onclick="div()" value="/">/</button>
+      
+    </div>
+</html>

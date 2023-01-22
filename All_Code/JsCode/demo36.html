@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Cut option disabled use </title>
+</head>
+
+<body>
+<h1>TECHPILE TECHNOLOGY  </h1>
+<input type="text"/>
+<script>
+/*window.addEventListener("cut",function(){
+alert("Don't cut any text disabled")
+event.preventDefault()
+})
+window.addEventListener("copy",function(){
+alert("Don't copy any text disabled")
+event.preventDefault()
+})
+window.addEventListener("past",function(){
+alert("Don't past any text disabled")
+event.preventDefault()
+})
+
+window.addEventListener("contextmenu",function(){
+alert("right click disabled")
+event.preventDefault()
+})*/
+function demo()
+{
+event.preventDefault()
+alert("This Option is Disabled Here..")
+}
+window.addEventListener("cut",demo)
+window.addEventListener("copy",demo)
+window.addEventListener("past",demo)
+window.addEventListener("contextmenu",demo)
+
+
+
+</script>
+</body>
+</html>

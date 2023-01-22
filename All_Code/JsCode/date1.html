@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            div{
+                min-height: 150px;
+                width: 1000px;
+                border: 10px double red;
+                border-radius: 15px;
+                box-shadow: 1px 1px 10px 3px yellow inset;
+                padding: 50px;
+                font-size: 150px;
+                text-align: center;
+                color:red;
+                background-color:azure;
+                font-family: Digital-7;
+				line-height:150px;
+
+            }
+            body{
+                background: black;
+
+            }
+        </style>
+    </head>
+    <body onload="demo()">
+        <div>time</div>
+		<script>
+		function demo()
+		{
+		var d=new Date()
+		var x=d.toLocaleTimeString()
+		document.querySelector("div").innerHTML=x
+		}
+		window.setInterval(demo,1000)
+		</script>
+    </body>
+</html>

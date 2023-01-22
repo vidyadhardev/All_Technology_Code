@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+   <body>
+
+    <input type="text" value="new color aotu reload" id="txt">
+    <input onclick="demo()" type="button" value="Color pick">
+    <script>
+        function demo()
+        {
+           var color= document.querySelector("input") 
+           color.select()
+           document.execCommand("Copy")
+           alert("Color Copied...")
+        
+
+        }
+    </script>
+   </body>
+    </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRED Conceot in upload</title>
+</head>
+<body>
+    <h3>IMAGE UPLOADING CONCEPT</h3>
+    <form>
+        <p>Img Upload => <input type="file" onchange="PicUpload(this);"> </p>
+        <img src="" height="200px" width="150px">
+    </form>
+    <script>
+        window.onload = function(){
+            var imgData = window.localStorage.getItem('images');
+            document.querySelector('img').src = imgData;
+        }
+        function PicUpload(object){
+            //object.file[0];
+            var reader = new FileReader();
+            reader.addEventListener('load',function(){
+                document.querySelector('img').src = reader.result;
+                window.localStorage.setItem('images',reader.result);
+            });
+            reader.readAsDataURL(object.files[0]);
+        }
+    </script>
+</body>
+</html>

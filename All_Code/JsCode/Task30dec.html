@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 30 Dec registrastion Form Fill Full Details In Techpile Techpile</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./Js/bootstrap.bundle.js"></script>
+    <style>
+        .a
+        {
+            min-height: 400px;
+            float: left;
+            width: 250px;
+        }
+        .b
+        {
+            min-height: 400px;
+            float: left;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="a mx-2" >
+        Name::
+        <p><input type="text" placeholder="UserName.." id="name"></p>
+        Institute::
+        <p> <select name="select" id="select">
+            <option value=""></option>
+            <option value="">GPM KHERI</option>
+            <option value="">GPM KHERI</option>
+            <option value="">GPM KHERI</option>
+
+        </select></p>
+        Year::
+        <p><input type="date"id="date" placeholder="Enter Pursuing year"></p>
+        E-mail::
+        <p><input type="email"  id="email"></p>
+        <button class="btn btn-outline-warning" onclick="reg()">Register</button>
+    </div>
+            <p></p>
+        </form>
+    
+   
+   
+    ] 
+   }
+
+    var std_List="<table><tr><th>Sr_No.</th><th>Name</th><th>College</th><th><th></th></th></tr>"
+  var Sr_No=0;
+   Sr_No++;
+   student_Data.forEach(element => {
+    result+=`
+    <tr>
+        <td>${Sr_No}</td>
+         <td>${name}</td>
+          <td>${colleg}</td>
+           <td>${date}</td>
+        </tr>
+     `
+     
+   });
+   res+="</table>"
+   document.querySelector("p").innerHTML=res
+      </script>
+</body>
+</html>

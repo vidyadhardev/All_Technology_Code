@@ -1,0 +1,35 @@
+<html>
+
+<head></head>
+<body>
+<input type="file" onchange="fileU(this)" id="fi"/><br/><br/>
+<b>MASSAGE</b><br/><br/>
+<button disabled >SAVE</button>
+<script>
+function fileU(x)
+{
+var  btn=document.querySelecter("button")
+var b=document.querySelecter("b")
+var fullpath=x.value;
+var ext=fullpath.substring(fullpath.lastIndexof('.')+1).toUpperCase()
+if (ext=="JPG " || ext=="PNG" || ext=="JPEG")
+{
+b.innerText="vailed image"
+b.style.color="green"
+btn.removeAttribute("disabled")
+x.style.border="5px solid green"
+}
+else
+{
+
+b.innerText="Invailed image"
+b.style.color="red"
+btn.removeAttribute("disabled","disabled");
+x.style.border="5px solid red"
+
+}
+}
+</script>
+
+</body>
+</html>

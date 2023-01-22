@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="./css/all.css" rel="stylesheet"/>
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+    <script src="js/bootstrap.bundle.js" res="stylesheet"></script> 
+
+</head>
+<body>
+    <p></p>
+    <div id="box"></div>
+
+    <div class="input-group w-25 mx-5">
+<input type="text" onkeyup="dataSearch(this)" placeholder ="type here" class="form-control">
+
+<i class="input-group-text">Search</i>
+    </div>
+ 
+    <script>
+
+var student_Data=[
+                   {name:"Ram",age:23,branch:"C.S.E",city:"Lucknow",pic:"vidya10.jpg"},
+                   {name:"Ghanshyam",age:24,branch:"I.T",city:"DELHI",pic:"1.jpg"},
+                   {name:"Vidya Dhar",age:32,branch:"B.C.A",city:"KANPUR",pic:"vidya15.jpg"},
+                   {name:"Anshu Nerma",age:24,branch:"IIT.",city:"MUMBAI",pic:"1.jpg"},
+                   {name:"Deelip Kumar",age:32,branch:"C.S.S",city:"IIT KHADAGPUR",pic:"vidya15.jpg"}
+        
+        ]
+    
+        var res="<table class='table table-hover'><tr><th>SR_NO</th><th>NAME</th><th>AGE</th><th>BRANCH</th><th>CITY</th><th>PITURE</th></tr>"
+           var Sr_No=0;
+           student_Data.forEach((data)=>{
+            Sr_No ++;
+       res+=`
+           <tr>
+            <td>${Sr_No}</td>
+            <td>${data.name}</td>
+            <td>${data.age}</td>
+            <td>${data.branch}</td>
+            <td>${data.city}</td>
+            <td><img src="image/${data.pic}"height='60px' width='50px'/></td>
+            </tr>
+        `
+           })
+           res+="</table>"
+          var x= document.querySelector("p").innerHTML=res
+          
+          //document.write(res)
+          function dataSearch(a){
+                 
+            var res="<table class='table table-hover'><tr><th>Sr_No</th><th>NAME</th><th>Age</th><th>BRANCH</th><th>CITY</th><th>Picture</th></tr>"
+           var Sr_No=0;
+           student_Data.forEach((data)=>{
+    if((data.name.includes(a.value)==true)||data.city.includes(a.value)==true){
+        Sr_No++;
+       res+=`
+           <tr>
+            <td>${Sr_No}</td>
+            <td>${data.name}</td>
+            <td>${data.age}</td>
+            <td>${data.branch}</td>
+            <td>${data.city}</td>
+            <td><img src="image/${data.pic}"height='40px'/></td>
+            </tr>
+`
+          }
+        })
+        res+="</table>"
+       
+        document.querySelector("#box").innerHTML=res
+    }
+
+    </script>
+</body>
+</html>

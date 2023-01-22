@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+
+            p
+            {
+                border: 5px solid red;
+                width: 400px;
+           
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">
+        THIS IS FIRST PARA 1
+            <img src="D:\Offline java Script\car gif.gif" height="100px">
+                </p><br>
+                <p id="p2">
+                    THIS IS FIRST PARA 4
+                 
+                        </p>
+                        <button onclick="demo()">click me </button>
+                        <script>
+                            var demo=()=>
+                            {
+                                var p1=document.querySelector("#p1")
+                                var p2=document.querySelector("#p2")
+                                p2.innerHTML="<h1>Welcom to Delhi</h1>"
+                                p2.innerHTML=p1.innerHTML
+                            }
+                        </script>
+    </body>
+</html>

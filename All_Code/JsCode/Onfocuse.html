@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+ONFOCUS<BR/>
+<input type="text"onfocus="demo1(this)"/>
+<p id="p1"></p>
+<br/>
+
+ONBLUR<BR/>
+<input type="text" onblur="demo2(this)"/>
+<p id="p2"></p><br/>
+<script>
+let demo1=(x)=>
+{
+document.querySelector("#p1").innerText=x.value
+
+}
+let demo2=(x)=>
+{
+document.querySelector("#p2").innerText=x.value
+
+}
+</script>
+</body>
+</html>

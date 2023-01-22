@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overriding Methodes</title>
+</head>
+<body>
+    <script>
+        class cat{
+            render(x,y)
+            {
+                return x**y
+            }
+        }
+        class fregment extends cat
+        {
+             render(x,y)
+             {
+                return x**y
+             }
+        }
+        var npx =new cat()
+        console.log("Result is ==> "+npx.render(9,34))
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Store in Local Storage</title>
+    <style>
+        #outer
+        {
+            min-height: 300px;
+            width:300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            margin: 50px auto;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+   <div id="outer">
+    <input type="text" autofocus placeholder="Name" id="n1" /><br><br>
+    <input type="number" placeholder="Mobile no." id="m2"><br><br>
+    <input type="e-mail" placeholder="E-mail" id="e3"><br><br>
+    <input type="password" placeholder="password" id="p4"><br><br><br>
+   <button onclick="Data()">Register</button>
+   </div> 
+   <script>
+    function Data(){
+        //data is  Retrieving
+var Name=document.getElementById("n1").value;
+var number=document.getElementById("m2").value;
+var mail=document.getElementById("e3").value;
+var pass=document.getElementById("p4").value;
+//alert(Name)
+// alert(number)
+// alert(mail)
+// alert(pass)
+//data storing
+
+var user=window.localStorage.setItem("Name",Name);
+var Mobile=window.localStorage.setItem("Mobile",number);
+var email=window.localStorage.setItem("E-mail",mail);
+var password=window.localStorage.setItem("password",pass);
+
+//Retriving stored data and using it for calculation
+
+var user=window.localStorage.getItem("n1",Name);
+var Mobile=window.localStorage.getItem("m2",number);
+var email=window.localStorage.getItem("e3",mail);
+var password=window.localStorage.getItem("p4",pass);
+
+alert("Registred Successfully");
+    };
+   </script>
+</body>
+</html>

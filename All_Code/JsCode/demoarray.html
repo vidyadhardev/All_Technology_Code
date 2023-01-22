@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+#box
+{
+
+    height: 500px;
+    width: 1000px;
+    border: 20px solid red;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    line-height: 500px;
+    font-size: 90px;
+    font-family: Impact;
+  margin: 0px auto;
+  background-image:url("image/image6.jfif");
+  background-size: cover;
+}
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>SLIDER</h1>
+            <hr/>
+        </center>
+        
+        <div id="box">Message</div>
+        
+    </div>
+        <script>
+            var arr=["image\study10.jfif","image\study11.jfif","image\study12.jfif"]
+            var txt=["txt1","txt2","txt3"]
+            var i=0
+            function SLIDER()
+            {
+                var dv=document.querySelector("#box")
+              
+                dv.style.background="url('image/"+arr[i]+"')"
+                dv.style.background="cover"
+                dv.innerText=txt[i]
+                i++
+                if(i==arr.length)
+                i=0
+            }
+            window.setInterval(SLIDER,2000)
+        </script>
+    </body>
+</html>

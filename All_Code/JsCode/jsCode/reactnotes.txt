@@ -1,0 +1,501 @@
+1. github account created successfully.
+2. github is a cloud service
+3. used to host, upload our own source code.(php, python, react,js,.net....Js)
+4. github product is microsoft.
+5. git and  github?
+git:git is a tool.
+github:gitHub is a cloud(service).
+                        Other options then gitHub:-
+                        ****************************
+1. gitlab   : Open source
+2. bitbucket  : Open source 
+3. bitkeeper  :   Open source, owner==> who made git.
+
+
+git:- git is a tool ,CLI (command line ) unix based  or linux based 
+git is a SCM or VCS or  VCM 
+SCM (SOURCE CONTROL MANEGMENT)
+VCM( VERSION CONTROL MANEGMENT)
+VCS(VERSION CONTROL SOFTWARE/SYSTEM).
+
+
+git has two flavoures::-
+1. gitHub desktop version (GUI)
+2. GIT BASH version (CLI) : black screen or terminal based or cmd based.
+
+using git bash one can run linux/unix commands in , windows oprating / mac book/ios/solaris....
+$ Linux Command using $
+1. Linux was invented by Linux TORWALD.
+2. Linux Torwald made a copy of Unix.(Free)
+3. Unix is pre-installed in servers.
+
+ 1. GIT is developed by Linux Torwald
+ then,bit keeper was a  cloud made by them.
+  1. Linux community is , all Free  and Open source hence  it will be always againest  the, pay grade system.
+ 
+Bitkeeper, first and oldest cloud
+
+parternership => microsoft stolen the idea of bitkeeper invented
+gitHub => bitbucket=> share own
+
+                        some basic command of Linux Treminal
+                        ***********************************
+All terminal common name: REPL==> read  evalute print loop
+1. clear:to clear screen
+2. pwd: print working directory
+3. mkdir:use to make folders
+4.  ls : used to list of files and folders (normal)
+ls -lart:used to show complete details about files and folders, all info,who made , whene made ,why made ...etc and permission
+
+Gernally any files or folders has three permission
+ 1. user 
+2. group
+3. owener 
+permission scopes
+1. (r)Read 
+2. (w)write 
+3. (x) Execute
+status :r+w+x-
+status :r+w+x+
+status :ls -lart
+	7. touch : used to creat file with or without extention . it is  used  to empty files .	
+
+single use : touch index.html
+multiple file :touch file1 file 2 file 3 file 4.... filen
+
+    8. echo : use to print anything on console.
+	file Handling 
+	*************
+	 1. write anything on the file  without directly accessing it.
+	 echo any massage or code or string > index.html
+	 
+	 Modes of file 
+	 **************
+	 1. overwrite mode   : echo something > index.html  
+	    old data replace by new
+	 
+	 2. append mode : echo something >> index.html
+	     old data+ new data  will be deleted 
+9. cat : contant at, command use , you can directly read  the file , without directly opened it.
+
+RULe : you must have permission then ,access Deined no sufficient Permission.	
+
+10. 		 Moving inside /outside of the directory
+            cd path-name/ : inside
+cd ../ for outside
+
+./ or current
+
+../ or parent			
+						
+						
+11. rm -r <file--name> : this will delete all files and folders shift+Delete
+
+file: rm -r about.html
+folder : rm -r foldername.
+             
+             How to pass range
+             *****************
+   command {start...End}
+   
+   -----------------------------
+   
+    how to change drive
+ cd x:hit enter
+x is drive name c: or e: or d:
+
+-------------------------------------------------------
+chmod : chmod command to change the permission code of user  ---> group----> owener or vice -verca.
+chmod <mode-number or permission number><path>
+
+chmod 777 ./
+============================================
+super user : su 
+for ex. sudo su 
+Super user mode :777 permission. 
+						
+	==============================================
+1. git pull or fetch ---all or git clone => download
+2. git push or upstream =>upload
+
+===================================================
+lets begain the cinema-:
+************************
+
+what is git ?
+1.git is scm,vcs,vcm
+scm: source code manegment
+vcs: version control software/system
+vcm: version control mechainism.
+	version:peice of code that changes daily.
+	tool otherthen git:-
+	********************
+	we can use ,svn(sub-version)or git .
+	svn(tortoise)
+	Difference between  svn and git
+	******************************
+	svn :sub-version
+	git : git is scm tool
+	svn is centralised.
+	git :modern conventions.
+	
+	comman commands;-
+	*****************
+	git status
+	svn 
+	git checkout
+	svn
+	git dance
+	svn
+	
+	note: svn and git both uses same type of command.
+	$ <git or svn> <command>
+======================================================================
+tracking /monitoring /snapshot/recording of file
+*************************************************
+Is possible at stage.
+
+
+
+=======================================================
+Important  Key Points about Github
+*******************************
+https://gitHub.com/vidyadhardev/repo-name.git
+
+Important information  realated to git repo-name
+************************************************
+1. every git repo  has its permission
+2. every git repo  will have readme file
+3. every git repo has visibility status
+  i) public repo => any body can see ,and any body can download(clone --> origin) or  any body can fork (clone-->upstream)
+, and any body can watch.
+  ii) Private =>
+
+4. every  git repo may have or may  not have licence 
+5. every git repo  will have its own owner  and its own branch  by default branch name is master 
+and after august -2021 master name was changed to main in github.
+						
+	{
+	MIT==>  OPEN SOURCE
+	BSD==>
+	
+	
+	} 
+
+                Difference	of gitclone  and git fork
+                **************************************
+				1) git  clone  code cloud  to local download --> private and public reepo
+				2) git fork code one git hub account ---> 2nd git account --> download public reepo.
+						
+	
+
+	
+	How to initialise a variable in :-
+    *********************************	
+	
+
+	
+	int a=20;
+	
+printf("a=%d",a); ==> value print a
+a variable use 
+
+similarly,
+before you can use ,any repo(private , public) it has to be initialised.
+              Initialisation in github & initialisation in local                 			  
+			**********************************************************
+			
+ Initialisation in github		-:
+steps are  :-
+1. repo name  --> owener--> master branch or main branch
+2. Repo description (optional)
+3. Visibility mode: private or public.
+4. readme.md
+5. .gitignore 
+6.  License 
+    Any specific branch :bydefault main--> change --> master
+						
+    Initialisation in local	
+    *************************	
+	before you commit(final save) owener information is mendatory .
+    
+    git will ask who are you before commit
+    ***************************************
+    There two ways of adding owner information	
+	 1. local--> multiple user --> local to   the user
+	 2. global --> single user--> globally.
+	 
+	  Consider, system
+	   guest-1 local user
+	   guest-2 local user
+	   admin local user
+	
+	If there is one user then to have set auther /owener information globally.				
+	
+    How to add show  global auther username and email
+   *****************************************************
+   
+	 $ git config --global user.name 				
+	 $ git config --global user.email 				
+						
+	for locally 
+     **********
+  	 $ git config --local user.name 				
+	 $ git config --local user.email			
+						
+	Note:- if you supply the value ,then set or if not  it will show.					
+						
+	Note::- For string value  if space seprated string then in command line "" is mendatory.
+    every space is sentance should be inside "" key inner.
+	
+	**********************************************************
+Adding Auther /owener information globally
+*******************--
+	$ git config --global user.name "vidya dhar"				
+	 $ git config --global user.email "vidyadhar9076944738@gmail.com"
+						
+	--------------------------------
+If already add ,owener information then  we  will remove it .
+windows ==> credential=> 1) web credential,2) windows credential	
+	 All server based credential (User Id + Password )	will be stored here only.
+	
+
+How to creat workk space in github
+**************************************
+Q)1. what is workspace?	
+	Work-Space :- workspace is  a folder where ,all your code  is kept ,and you are current working.(cwd): current directory 
+    cwd is only called workspace.
+    $ mkdir foldername
+    $ cd foldername
+    $ pwd ->path /to/cwd
+    $ ls-lart or $ ls	
+	
+	--------------------------------
+	How to initialis git at local 
+	****************************
+	$ git init
+
+How to see git branch namme at local
+****************************************	
+	$ git config --list --show-origin      //( this  use comman to show full path)
+                 or 
+    $ git config --list	
+	               [   ]
+					|
+					Options or flags or conditions or arguments
+
+    Hoe to change ,the init .defaultbranch name from master to main
+	****************************************************************
+	1. Linux or terminal
+	
+	       Linux
+		   ------
+	cmd ==> lunch => administrator
+	 change the permission using command.
+	 
+	 
+               Windows
+			   -------
+    open powershell or cmd => lunch => administrator run
+	cd etc/
+	chmod 777 path /to/folder
+	when ,r+w+x+ permission
+	properties>security>permission>edit>allow permission
+	full access [tick]
+	Read [tick]
+	execute [tick]
+	write [tick]
+	apply > ok > ok
+	chmod 777 path/to/folder
+	$ git config --system init.defaultbranch "main" 
+
+Note :--- git init is done when you are sure  that you are going to creat some files.
+                      Ask Two main Qustion with yourself
+                        
+					************************************
+                1. Is this my correct cwd.?
+                if not then run cd command and move to correct,
+                2. make sure you have few files.
+
+note::- no commit will be allowed with out any file .				
+			
+   how to creat empty files.
+   *****************************
+$ touch index.html about.html gallery.html
+$
+
+
+write some code ....
+  How to tracking of files
+  ************************
+  or 
+   How to add files to stage
+   **************************
+   $ git add filename
+   
+   for entire folder
+   ******************
+   $ git add .
+   
+   how to check tracking:-
+   ***********************
+   $ git status
+   Note::- you can run git  status at any mode,any situtaion any, way and any time .
+   
+   $ git init 
+   Note::- you have to git init ,for frist time , you to convert .
+   cwd==> myproject(workspace) => main repository.
+   Note::-local git repo
+   
+   Details about .git folder
+   **************************
+   it is main hidden folder
+   $ git ls 
+   $ git bran
+   
+   Note::- branch is concept which is created when multiple user  are working  together.
+   
+   How to see branch list
+  ****************************
+    $ git branch
+   1  developer
+   2  master or main
+   3  tester  // (*) tester <----- current branch name
+   4  designer
+   
+   
+    branches of two types
+	**********************
+	 1. local branch
+	 2. origin (gitHub or cloud) : $ git branch --all
+	 
+	 
+	 how to local branch looke likes 
+	 ********************************
+	 developer
+	 master or main 
+	 tester  // (*) tester <----- current branch name
+     designer
+     refs/remotes/origin/main 
+     refs/remotes/origin/designer 
+     refs/remotes/origin/tester 
+     refs/remotes/origin/production 
+     refs/remotes/origin/developer 
+     refs/remotes/origin/realese 
+	 -------------------output---------------------------
+	 
+	 
+	                        21/11/2022
+	                  
+	 
+	VERY IMP Note :: branch cannot be created untill first commit or first pul or clone .
+	
+	
+	 first commit  -> saving from local  .git repository 
+	 first | ---> stage  -----> final commit  | .git repo .
+	 As soon as , Automatically, --> run commit your recent commit will become HEAD  of that branch .
+	 
+	for first commit file should be at ,STAGE 
+	********************************************
+	$ git add filename
+	or 
+	$ git add .
+	
+	-------------------------------
+	 How to any file to cache memory or unstage
+	 ********************************************
+	 $ rm -r foldername or filename
+	 $ git rm --cached <filename>  :--->unstage => No tracking 
+	 
+	How to track the modified
+	*****************************
+	$ git status
+	s:status
+	s: stage 
+	
+	Note ::- Once you are sure and you are done with your task,
+	
+	  How to commit 
+	  *****************
+	  After modified stage you have 
+	  Two option 
+	  1.  unstage
+	  2.  commit
+	  
+	  $ git commit -m "Added ,changes in about and gallery file "
+	  
+	  This massage will be commit massage after commit 
+	  you  will get , commit Id : 40bit 
+	  
+	  Once commit  
+	  1. Head is genrated 
+	  2. commit Id is automaticaly 
+	  3. file will be automaticaly unstage -->untracked mode 
+	   
+	    During commit 
+		**************
+		versioning happens and mode is changed by git 
+		
+		
+		What happens during versioning
+		*************************************
+		frist auto creat a table 
+		--------
+		table : date and time | auther information: commit Id ,massage also code
+		
+		Add [+] insertions :green
+		del [-]  deletion :red 
+		NC [0] unchanged  :  default white.
+		Nc  ==> No,  changes.
+		
+		$ git status 
+		$ Nothing to commit working tree clean .
+		
+		 How  to see commit 
+		 *******************
+		 $ git log 
+		 log ==> commit Id ,head information:   , Auther Information:
+		If want to end log to use --> log End  :q or ctrl + cache
+		
+		 How to see code of commit-:
+		 ************************
+		 $ git diff <branchname>
+		 or 
+		 $ git diff <commitId> if branch same you want to code of any other commit you will be in detach mode
+        new branch for older commit  created => detached HEAD branch.
+ How to create branch :-
+***********************
+$ git branch <branchname>
+
+how to move from one branch to another branch 
+***********************************************
+$git chechout branchname
+or 
+$ git chechout commitId
+
+How to delete branch
+**************************
+Note ::- deleting the branch will delete all commites.
+and impossible to undo.
+
+$ git branch --delete <branchname>
+
+how to final chechout 
+*********************
+$ git chechout <commitId or branchname>
+
+                     23/11/2022
+					 
+					 Difference between Detached HEAD and Branch
+					 ************************************************
+					
+					
+					note line in notbook
+					
+					
+======================================================================================== 
+
+
+
+
+

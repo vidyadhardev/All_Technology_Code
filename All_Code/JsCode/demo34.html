@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<div >
+DIV
+<h1>h1 bold tag</h1>
+</div>
+<script>
+document.querySelector("div").addEventListener("click",function(){
+alert("Div")
+})
+document.querySelector("h1").addEventListener("click",function(a){
+alert("h1")
+a.stopPropagation()
+})
+</script>
+</body>
+</html>

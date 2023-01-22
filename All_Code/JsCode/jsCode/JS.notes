@@ -1,0 +1,340 @@
+                                                 DAY 4 jS CODE
+												==============
+
+=====>  DOCUMENT.................,
+syntax--> 
+document.getElementbyId("");
+============================ 
+var h=document.getElementById("x")
+step to apply css with JS
+-------------------------------
+object.style.propertyName=value;
+h.style.color="red"
+h.style.backgroundColor="balck"
+h.style.borderRadius="10px"
+================================
+VALUE
+====
+value--> value property is used to ste/get value of selected HTML form-control(input,selct ,textarea,button).
+==> retun type of value
+
+<input type="text" id="txt"/>  //40
+GET
+====
+var x=document.getElementById("txt").value
+
+
+======================================
+set
+====
+document .getElementById("idofformcontrol").value
+="Hanuman ji"
+==========================
+
+function demo()
+{
+block of code
+}
+------------------------------------------------------------------------------------------
+write
+------
+==> write function is used to display O/p on HTML document page.
+==> It is defined in document object.
+syntax--
+------
+document.write(message); 
+=============================
+innerText
+========
+==> innerText property is used to set/get normal text of selected HTMl element.
+
+<div>Techpile technology</div>
+<input/> 
+document.getElementById("text1").value
+document.getElementById("dv").innerText
+
+--------------------------------
+get
+---
+syntax--
+document.getElementById("IdOFHTMLEement").innerText
+-----------------------------
+set
+----
+document.getElementById("IdOFFormControl").innerText
+====================================================
+querySelector
+-------------
+==>
+
+<p class="a">para1</p>
+<p class="a">para2</p>
+<p class="a">para3</p>
+<p class="a">para4</p>
+<p class="a">para5</p>
+
+document.querySelector()
+
+==> querySelector is used to select first 
+---missing some line----
+
+
+===============================
+setTimeout()
+---------
+==>setTimeout function is used to execute a group of statment after given time interval.
+
+syntax--
+-----
+window.setTimeout(functionname,time in ml)
+or
+window.setTimeout("functionname()",time in ml)
+
+
+
+=======================================
+value
+innerText
+
+                         innerHTML
+						 ----------
+innerHTML is used to set or get text with Tag of selected HTMl element.
+
+
+
+<p id="p1"><b >WELCOM TO JS</b></p>
+ var x=document.querySelector("#p1").innerText;
+ 
+ get
+ =====
+ document
+ var x=document.querySelector("#p1").innerHTML;
+ set
+ ====
+ document.querySelector("#p1").innerText="<b>WELCOM</b>"
+
+===========================================================================
+type
+====
+type property is used to  set / get value of  attribuete of selected form control.
+
+<input type="password" class="txt"/>
+
+var x=document.querySelector(".txt").type
+alert(x)//password
+--
+set
+====
+document.querySelector(".txt").type="buttonname/file"(radio,checkbox..etc)
+=====================================================================================
+equal defrent
+-------------
+= value assingment
+== to check only value of opereads.
+10=="10"  // true
+===  strict equal=> to check value and data type both of 
+===============================================================
+setAttribute()
+---------------
+=> setAttribute functionis used to set Attribute value of any selected HTML elemment.
+
+<input type="password"/>
+
+syntax--
+------
+
+objectname.setAttribute("AttributeName","value")
+document.querySelector("input").setAttribute("type","checkbox")
+
+***************************************************************************************
+   1. getAttribute
+   2. removeAttribute
+   3. hasAttribute
+   result in Attribute==> true/false
+   ******************************************
+   Operator
+   ========
+   operator is a symboll to perform operation over the operands.
+   
+ eg.  x=10
+      y=3
+      console.log(x+y) //13
+	  console.log(x-y) //7
+	  console.log(x/y) //3.333
+	  console.log(x*y) //30
+	  console.log(x%y) //1
+   
+   1. Arithmetic Operator
+   +,-,/,*,%
+   
+   2. relational operator || Comparision operator
+   >,<,<=,>=,==,===
+   x=10
+   y=2
+   z="2"
+eg.console.log(x>y)//true
+   console.log(x>=y)//true
+   console.log(x<y)//false
+   console.log(x<=y)//false
+   console.log(x==y)//false
+   console.log(y==z)//true
+   console.log(y===z)//false
+       
+   
+   3. Assignment operator
+   =,,+=,-=,/=,*=,%=
+   
+   var x=10
+   var y=2
+   var x+y => x=x+y //12
+   var x-=y => x=x-y //8
+   var x*=y x=x*y //20
+   var x/y => x=x/y //5
+   var x%=y => x%y //0
+   
+   4.Logical operator
+    and  or not
+	&& and 
+	|| or
+	! not
+1.)	&&  ==> It return if both argument true 
+	otherwise it return false
+eg.=>	var x=20
+	    var y=10
+		
+	true && true  => true
+	false && true => false
+	true && false => false
+	false && false => false
+	
+2.)	==>  ||(or) ==> It return if at least one argument is true.
+      true || true =>true	
+	  false || true =>true	
+	  false || false =>false	
+	  true || false =>true	
+3.) ==> ! (not) ==> 
+       !true=>false
+	  !false=>true
+      !(true || true) =>false	
+	  !(false || true) =>false	
+	  !(false || false) =>true	
+	  !(true || false) =>false 
+	
+	
+	5. Increment and Deincrement operator
+	  
+	  **  pre-used in c languege (read in c )
+	 (1) Increment operator=>
+	 i) pre-Increment operator
+	ii) post-Increment operator
+	-------
+	(1) DeIncrement operator=>
+	 i) pre-DeIncrement operator
+	ii) post-DeIncrement operator
+	
+	6. Conditional Operator  || Trenary Operator
+	
+	
+
+==================================================================================================
+                             Offline batch Notes
+							 ---------------------
+							     25/11/2022
+								 ============
+alert()
+  way to write codde of jaavascript
+  ______________________________________
+  1.Internal   javascript
+  <script>
+  2. External JS
+  
+  console.log()=>
+ =================
+ it is uesd to display output browser console.
+ <script>
+ console.log("WELCOM to lko");
+ </script>
+==================
+var x
+
+
+ES6  in add new 2015 update-- this let,const    
+________________ 
+            
+ECMA==> ECMA is a statndard to wrtite a code .
+
+=================================================
+prompt()
+--------
+=> prompt is uesd to take input from user on runtime.
+
+==>
+=================================================================
+**********************************************************************************
+forEach()
++++++++++
+=> forEach function is used to execute a group of statment for every element prsent in array.
+=> forEach will not execute if array is emputy.
+
+=========
+Syntax
+======
+arr=["html","css","js","jQuery"]
+arrayName.forEach(functionName)
+              {OR}
+function functionName(current,index,arrName)
+{
+statment
+}
+================================
+
+anonymous function
+-------------------
+
+
+
+
+===========================================================================================
+                            08/12/2022
+							-----------
+                        HAS Attribute
+						**************
+						
+IT RETURNS TRUE IF SPECIFIED Attribute EXIST ON  SELECTED HTML ELEMENT OTHERWISE  IT RETURNS FALSE .
+<H2 Id="BOX"> HTML</H2>
+
+<html>
+<head></head>
+<body>
+<script>
+ var x=document.querySelector("h2").hasAttribute("id")//false
+</script>
+</body>
+</html>
+
+
+
+==============================================================
+hasAttributes
+--------------
+if returns false if selected HTML elemment have no attribuete otherwise it retuns true
+ eg-:
+  var x=document.querySelector("h2").hasAttribute("id")//false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

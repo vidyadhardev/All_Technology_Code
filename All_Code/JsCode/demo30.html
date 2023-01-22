@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+    
+        </style>
+    </head>
+    <body>
+        <input type="text" name="" id="">
+        <div onload="demo()">COLOR</div>
+        <p> </p>
+        <script>
+            function demo()
+            {
+                var s="0987654321abcdef"
+                var dv=""
+                for (var a=0;a<10;a++);
+                {
+                    var color="#"
+                    var color1="#"
+                    for(var i=0;i<=5;i++);
+                   {
+                     var rIndex=Math.floor(Math.random()*16)
+                      var rIndex1=Math.floor(Math.random()*16)
+            
+                       var rCh=s[rIndex]
+                      var rCh1=s[rIndex1]
+                       color=color+rCh
+                       color1=color1+rCh1
+                       var str="0123456789abcdef"
+                
+                    }
+                       dv=dv+"<div onclick='Copied(this)' style='background:"+color+";border:8px goorve red"+color1+"'>"+color+"</div>"
+
+                }
+                  document.querySelector("p").innerHTML=dv
+            }    
+            
+            
+            function Copied(x)
+            {
+              document.querySelector("input")
+              txt.value=x.innerTxet
+              txt.select()
+              document.execCommand("Copied")  
+              alert("messaege copied")
+            }
+        </script>
+        <h2 >GOVERMENTED COLLEGE </h2>
+    </body>
+</html>

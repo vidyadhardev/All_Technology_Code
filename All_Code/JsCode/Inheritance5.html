@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class test{
+            metode1(X)
+            {
+                console.log(X)
+            }
+        
+        metode1(X,Y)   // Methode overriding
+            { 
+                console.log(X+"||"+Y)
+            }
+        }
+        var obj=new test()
+        obj.metode1(45)
+        obj.metode1(4567,45678)
+    </script>
+</body>
+</html>

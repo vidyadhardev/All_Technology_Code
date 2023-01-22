@@ -1,0 +1,219 @@
+<html>
+<head>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/all.css" rel="stylesheet"/>
+<style>
+.login
+{
+    min-height: 800px;
+}
+.txtcolor
+{
+color:orange;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid  bg-light">
+<div class="a" style="margin-left:630px;font-size:30px;">Register<b class="txtcolor"> With Us</b></div>
+<div style="margin-left:550px;">If love is true then only the two lines of love become the basis of love life.</div>
+<div class="row">
+<div class="col-md-6 login ">
+<DIV class="input-group mt-5">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-pen"></i></i>
+
+<input type="text" readonly value="TPT-ST22 VIDYA DHAR" id="tpt-st22" class="form-control"/>
+</DIV><br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-id-badge"></i></i>
+<input type="text" placeholder="Username" id="Name" class="form-control "/>
+</div><br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-building-columns"></i></i>
+<input type="text" placeholder="College Name" id="College" class="form-control "/>
+</div>
+<br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-clock"></i></i>
+<input type="number" placeholder="Your Pursuing Year" id="Year" class="form-control "/>
+</div>
+<br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-envelope"></i></i>
+<input type="email" placeholder="Enter E-mail id" id="E-mail" class="form-control "/>
+</div><br/>
+<button class="btn btn-outline-warning" id="btn">Register Now</button>
+
+</div>
+<div class="col-md-6">
+<div class="input-group mt-5">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-calendar-days"></i></i>
+<input type="text" readonly value="17/11/2022" id="Data" class="form-control"/>
+</div><br/>
+<div class="input-group">
+<i class="input-group-text bg-secondary"><i class=" fa-solid fa-pen"></i></i>
+<select class="form-control " id="Training">
+<option selected>Select Training Name</option>
+<option>summer</option>
+<option>app</option>
+<option>winter</option>
+</select>
+</div><br/>
+<div class="input-group">
+<i class="input-group-text bg-secondary"><i class="fa-sharp fa-solid fa-desktop"></i></i>
+<select class="form-control " id="Course">
+<option selected>Select your Course</option>
+<option>C.S</option>
+<option>E.E</option>
+<option>C.V</option>
+</select>
+</div><br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-phone"></i></i>
+<input type="number" placeholder="Enter number" id="Number" class="form-control "/>
+</div>
+<br/>
+<div class="input-group">
+<i class="input-group-text text-bg-secondary"><i class="fa-solid fa-indian-rupee-sign"></i></i>
+<input type="number" placeholder="Remaining to pay" id="Amount" class="form-control "/>
+</div><br/> 
+<input type="file" name="file" id="Picture">
+</div>
+</div>
+</div>
+<div id="AllData_List"></div>
+<script>
+
+
+
+
+            var Student_Data=[]
+            var St_Id=document.querySelector("#tpt-st22");
+            var name=document.querySelector("#Name")
+            var college=document.querySelector("#College")
+            var year=document.querySelector("#Year")
+            var email=document.querySelector("#E-mail")
+            var Btn=document.querySelector("#btn")
+            var date=document.querySelector("#Date")
+            var training=document.querySelector("#Training")
+            var course=document.querySelector("#Course")
+            var number=document.querySelector("#Number")
+            var amount=document.querySelector("#Amount")
+            var pic=document.querySelector("#Picture")
+            //=====================================================
+            function add()
+        {
+            //alert(Picture.value)
+            var filename=Picture.value.split('\\').pop()
+            //alert(.value)
+        if(Name.value!="" && Mobile.value!="" && Email.value!="" && City.value!="")
+        {
+        if(btn.value=="Save")
+            {
+            studentInfo.push({tpt:tpt.value,Name:Name.value,college:college.value,year:year.value,Email:Email.value,date:date.value,training:training.value,course:course.value,number:number.value,pic:filename.value})
+        }
+        else if(btn.value=="UPDATE")
+        {
+            Student_Data[i].TPT=TPT.value
+            Student_Data[i].Name=Name.value
+            Student_Data[i].college=college.value
+            Student_Data[i].year=year.value
+            Student_Data[i].Email=email.value
+            Student_Data[i].date=date.value
+            Student_Data[i].training=training.value
+            Student_Data[i].course=course.value
+            Student_Data[i].number=Number.value
+            Student_Data[i].Picture=filename
+                btn.value="Save"
+          
+        }
+    }
+    else{
+        alert("Please fill all field..")
+    }
+        Name.value=""
+        college.value=""
+        year.value=""
+        year.value=""
+        year.value=""
+        year.value=""
+        year.value=""
+        year.value=""
+        year.value=""
+        Mobile.value=""
+        Picture.value=""
+
+
+         showData()
+        }
+
+
+
+            //=================================================
+            function showData_Table()
+        {
+            var res="<table class='table table-stripted'><tr class='text-bg-success'><th>Sr No</th><th>tpt</th><th>name</th><th>college</th><th>year</th><th>email</th><th>date</th><th>training</th><th>coures</th><th>number</th></thamount></th></tr>"
+                var sr=0;
+                studentInfo.forEach((StudentData)=>{
+                    sr++;
+                    res+=`
+                    <tr>
+                        <td>${sr}</td>
+                    <td>${StudentData.St_Id}</td> 
+                    <td>${StudentData.name}</td> 
+                    <td>${StudentData.college}</td> 
+                    <td>${StudentData.year}</td> 
+                    <td>${StudentData.email}</td> 
+                    <td>${StudentData.date}</td> 
+                    <td>${StudentData.training}</td> 
+                    <td>${StudentData.course}</td> 
+                    <td>${StudentData.number}</td> 
+                    <td>${StudentData.amount}</td> 
+                    <td><img src='images/${Data.Picture}' height='40'/></td> 
+                    <td><button class='btn btn-warning' onclick='edit(this)'>Edit</button></td>
+                    <td><button class='btn btn-danger' onclick='remove(this)'>Delete</button></td>
+                    </tr>
+                    `
+                })
+                res+="</table>"
+                document.querySelector("#AllData_List").innerHTML=res
+
+        }
+
+
+//=============================
+function remove(x)
+        {
+    var itoDelete=x.parentElement.parentElement.firstElementChild.innerText-1
+    var status=confirm("Are you sure want to delete record ?")
+    if(status==true)
+    {
+        StudentData.splice(itoDelete,1)
+    }
+    //console.log(studentInfo.length)
+    showData()
+
+        }
+       // [{},{}]
+
+        function edit(x)
+        {
+        i=x.parentElement.parentElement.firstElementChild.innerText-1//1
+        btn.value="UPDATE"
+        Name.value=StudentData[i].Name
+        Email.value=StudentData[i].Email
+        Mobile.value=StudentData[i].Mobile
+        City.value=StudentData[i].City
+       document.querySelector("#im").src=`images/${StudentData[i].Picture}`
+        }
+
+
+ 
+
+</script>
+</body>
+</html>

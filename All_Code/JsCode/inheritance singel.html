@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Inheritance in Javascript</title>
+</head>
+<body>
+    <script>
+        class parent{              //parent class / Base class
+            constructor()
+            {
+                  console.log("constructor Mathode Runinig")
+            }            
+            methode1()
+            {
+                console.log(" (Parent class)This is Single inharitance from Parent class")
+            }
+        }
+        class child extends parent     //child class or Derived class
+        {
+            constructor()
+            {
+                super();
+                  console.log("child constructor Mathode Runinig")
+              
+            } 
+
+            methode2(){
+                this .methode1();
+                console.log(" (child class)This is Single inharitance from child class")
+            }
+        }
+        var obj=new child()
+        obj.methode2()
+        //obj.methode1()
+    </script>
+</body>
+</html>

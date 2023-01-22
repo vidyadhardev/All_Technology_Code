@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+<select onchange="demo(v)">
+    <option>--Select Course--</option>
+    <option value="400"> HTML </option>
+    <option value="500"> CSS </option>
+    <option value="800"> COURSRS OTHER </option>
+    <option value="1200"> JAVA SCRIPT </option>
+  
+
+</select>
+
+<script>
+    function demo (v)
+    {
+        var v=document.querySelector("select").value
+        alert(v.value)
+    }
+</script>
+<button>GET VALUE </button>
+    </body>
+</html>

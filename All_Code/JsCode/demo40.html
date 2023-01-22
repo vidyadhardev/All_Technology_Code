@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+<p></p>
+<b></b>
+<script>
+var state=["UP","BIHAR","MP"]
+var ddl="<select onchange='City(this)'>"
+for(var x of state)
+{
+//alert(x)
+ddl=ddl+"<option>"+x+"</option>"
+}
+ddl+="</select>"
+document.querySelector("p").innerHTML=ddl
+function City(a)
+{
+var ucity=["Lucknow","Varanasi","Lakhimpur","Sitapur","Baliya"]
+var mcity=["Katani ","Satana","Bhopal"]
+var bcity=["Patana ","Ara","Gaya","Chapara"]
+var City="<select>"
+if(x.value=="UP")
+{
+for(var x of ucity)
+{
+city+="<option>"+x+"</option>"
+}
+}
+
+else if (a.value=="BIHAR")
+{
+for(var y of mcity){
+city+="<option>"+y+"</option>"
+}
+}
+
+else if (a.value=="BIHAR")
+{
+for(var z of bcity){
+city+="<option>"+z+"</option>"
+}
+}
+City+="</select>"
+document.querySelector("b").innerHTML=City;
+}
+</script>0
+</body>
+</html>

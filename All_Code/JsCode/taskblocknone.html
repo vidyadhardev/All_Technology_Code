@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+#outer
+{
+min-height:400px;
+width:400px;
+border:2px solid white;
+margin:0px auto;
+background:linear-gradient(60deg,orange,red,orange) !important;
+}
+.a
+{
+height:30px;
+width:50%;
+background:black;
+float:left;
+text-align:center;
+line-height:30px;
+}
+.b
+{
+height:30px;
+width:50%;
+background:black;
+float:left;
+text-align:center;
+line-height:30px;
+}
+.btn1
+{
+height:40px;
+font-size:15px;
+background:black;
+color:white;
+text-align:center;
+font-size:20px;
+}
+.btn1:hover
+{
+background:white;
+color:red;
+}
+#log
+{
+display:none;
+}
+#reg
+{
+display:none;
+}
+#btn
+{
+background:black;
+height:40px;
+width:100%;
+}
+input
+{
+height:35px;
+width:396px;
+margin-left:2px;
+border-radius:10px;
+border:1px solid aqua;
+}
+::type
+{
+border:1px solid red;
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="btn">
+<div class="a">
+<div class="btn1" onclick="login()">Login</div>
+</div>
+<div class="b">
+<div class="btn1" onclick="register()">Register</div>
+</div>
+</div>
+<div id="reg">
+<form>
+<h1>REGISTER</h1>
+Name:<br/>
+<input type="text"/><br/>
+Mobile:<br/>
+<input type="text"/><br/>
+GmialId:<br/>
+<input type="email"/><br/>
+Address:<br/>
+<input type="text"/><br/>
+College:<br/>
+<input type="text"/><br/><br/>
+<input type="submit" value="SUBMIT" style="background:green;font-size:20px; color:white;border-radius:50px;"/>
+</form>
+</div>
+<div id="log">
+<form>
+<h1>LOGIN</h1>
+Mobile:<br/>
+<input type="text"/><br/>
+GmialId*:<br/>
+<input type="email"/><br/>
+Password*:<br/>
+<input type="password"/><br/><br/>
+<input type="submit" value="SUBMIT" style="background:green;font-size:20px; color:white;border-radius:50px;"/>
+</form>
+</div>
+</div>
+<script>
+var r=document.querySelector("#reg");
+var l=document.querySelector("#log");
+function login()
+{
+l.style.display="block";
+r.style.display="none";
+}
+function register()
+{
+r.style.display="block";
+l.style.display="none";
+}
+</script>
+</body>
+</html>

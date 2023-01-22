@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+#box
+{
+height:300px;
+width:300px;
+background:red;
+margin:25px;
+//display:inline;
+//display:block;
+display:inline-block;
+}
+@media (min-width:0px) and (max-width:500px)
+{
+#box
+{
+background:gold;
+transition:all ease 2s;
+//margin:0px auto;
+font-family:impact;
+font-size:30px;
+text-align:center;
+line-height:300px;
+border-radius:10px;
+box-shadow:0px 0px 10px 4px black;
+
+}
+}
+@media (min-width:501px) and (max-width:1000px)
+{
+#box{
+background:whitesmoke;
+color:red;
+transition:all ease 3s;
+font-size:50px;
+border-radius:10px;
+box-shadow:0px 0px 10px 4px green;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="box">techpile</div>
+<div id="box">techpile</div>
+<div id="box">techpile</div>
+<div id="box">techpile</div>
+<div id="box">techpile</div>
+</body>
+</html>

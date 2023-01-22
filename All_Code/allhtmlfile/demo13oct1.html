@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+#box
+{
+height:600px;
+width:90%;
+//background-image:url("D:\html file\animation.jfif");
+background:aqua;
+background-size:100% 100%;
+font-size:50px;
+text-align:center;
+line-height:600px;
+font-family:impact;
+border:50px solid red;
+padding:25px;
+//background-clip:content;
+color:transparent;
+-webkit-background-clip:content;
+animation:txt;
+animation-duration:5s;
+animation-itration-count:infinite;
+//animation:txt 5s infinite alternate;
+}
+@keyframes txt
+{
+0%{
+background:url("D:\html file/images(1).jfif");
+background-size:100% 100%;
+}
+50%{
+background-image:url("D:\html file\animation.jfif");
+background-size:100% 100%;
+}
+100%{
+background:url("D:\html file/images(1).jfif");
+background-size:100% 100%;
+}
+}
+</style>
+</head>
+<body>
+<div id ="box">
+This site can’t be reachedwww.google.com’s server IP address could not be found.
+Try:
+
+Checking the connection
+Checking the proxy, firewall and DNS configuration
+Running Windows Network Diagnostics
+ERR_NAME_NOT_RESOLVED
+</div>
+</body>
+</html>

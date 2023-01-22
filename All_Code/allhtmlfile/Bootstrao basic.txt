@@ -1,0 +1,179 @@
+                                                            11/11/2022
+															
+															bootstrap
+															---------
+															
+====>  Bootsrap was developed by (Mark Otto and Jacob Thornton ) at twitter .
+
+====>  It was relesed in agust 2001.
+====================================================================================
+bootstrap color==> 
+primary
+secondary
+info
+success
+warning
+danger
+dark
+light
+white
+================
+background
+==========
+bg-white
+bg-dark
+====================
+text-color
+=========
+text-colorname
+============
+text-primary
+text-success
+text--danger
+============
+text-align
+===========
+text-center
+==========
+bootstrap version 4==> text-left ==> BSV 5 => text-start
+bootstrap version 4==> text-right ==> BSV 5 => text-end
+=============================
+text-transform:uppercase|| lowercase||capitlize
+-------
+text-uppercase
+text-lowercase
+text-capitlize
+---------------
+text-bg-colorname
+ text-bg-colorname
+text-bg-colorname
+text-bg-colorname
+=================
+font-size
+--------
+fs-(1-6)
+fs-2
+fs-3
+fs-4
+fs-5
+fs-6
+=========
+font-weight
+-------
+fw-bold
+fw-bolder
+fw-semibold
+fw-lighter
+fw-light
+=============
+font-style:normal|| italic
+fst-normal
+fst-italic
+===========
+text-decoretion
+--------------
+text-decoretion-overline
+text-decoretion-underline
+text-decoretion-line-through
+text-decoretion-semiline
+text-decoretion-none
+==================
+Heading
+---------
+h1
+h2
+h3
+h4
+h5
+h6
+
+-------------
+Bootsrap alert box
+--------------
+alert alert-danger
+alert alert-success
+alert alert-info
+==============
+widht
+-----
+w-100  (100%)
+w-75 75%....
+w-25
+w-100
+=======
+Bootsrap buttons
+---------------
+btn btn-danger
+btn btn-success
+btn btn-info
+use all color....?
+====================
+Bootsrap buttons with outline
+--------------------------------
+btn btn-outline-danger
+btn btn-outline-success
+btn btn-outline-info
+use all color....?
+=====================
+padding
+----------
+p-1  to p-5  value (0-5)top left right bottom
+p-t ==> padding top
+pb===> padding bottom
+pe-padding-end
+ps==> padding-start
+px==> padding-start,padding-end
+py==> padding-top,padding-bottom
+================================
+margin
+---------
+m    (0-5)
+m==> top left ,right,bottom
+mt==> margin-top
+mb==> margin-bottom
+ml==> margin-start
+mr==> margin-end
+me==> margin-start and margin-end
+my==> margin-top and margin-bottom
+margin:0px auto;
+mx==>auto
+=====================================
+Image responsive
+------------------
+BSV 4 ==> imge-responsive
+BSV 5 ==> imge-fluid,img-thumbnail
+============================
+float-left==> float-start
+float-right==>float-end
+============================
+border-radius
+------------------
+rounded-top
+rounded-bottom
+rounded-start
+rounded-end
+rounded-pill
+
+================
+(1REM in 16 px )
+================
+visibitity=hidden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

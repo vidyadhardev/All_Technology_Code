@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <style>
+        h1{
+            font-size: 80px;
+            text-align: center;
+        }
+        .a
+        {
+            background: yellow;
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+        .b
+        {
+            background:orange;
+            border: 2px solid rgb(61, 203, 10);
+            border-radius: 15px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <h1 class="a">WELCOME TO TECHPILE </h1>
+        <BUtton onclick="demo()">CLICK HERE</BUtton>
+        <script>
+function demo()
+{
+    var x=document.querySelector("h1")
+    if(x.getAttribute("class")=="a")
+    x.setAttribute("class","b")
+    else
+    x.setAttribute("class",a)
+}
+window.setInterval(demo,1000)
+
+        </script>
+</body>
+</html>

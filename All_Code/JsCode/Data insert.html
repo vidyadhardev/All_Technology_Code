@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/all.css" rel="stylesheet"/>
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <style>
+        .form-control
+        {
+            margin-bottom:3%;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner-fluid">
+        <div class="col-sm-4 mx-auto pt-5">
+            <input type="text" id="name" placeholder="Enter Your Name.." class="form-control"/>
+            <input type="number" placeholder="Enter Your Mobile.." id="mobno" class="form-control"/>
+            <input type="email" placeholder="Enter Your email.." id="email" class="form-control"/>
+            <input  type="text" placeholder="Enter Your City.." id="city" class="form-control"/>
+            <input type="file"  id="fu" class="form-control"/>
+            <img id="im" height="30px"  />
+            <input type="button" onclick="add()" id="btn" class="btn btn-warning" value="Save"/>
+
+
+
+        </div>
+        <div id="t"></div>
+
+    </div>
+    <script>
+            var studentInfo=[]
+            var Name=document.querySelector("#name")
+            var Mobile=document.querySelector("#mobno")
+            var Email=document.querySelector("#email")
+            var City=document.querySelector("#city")
+            var Picture=document.querySelector("#fu")
+            var btn=document.querySelector("#btn")
+
+        function add()
+        {
+            //alert(Picture.value)
+            var filename=Picture.value.split('\\').pop()
+            //alert(filename)
+        if(Name.value!="" && Mobile.value!="" && Email.value!="" && City.value!="")
+        {
+        if(btn.value=="Save")
+            {
+            studentInfo.push({Name:Name.value,Mobile:Mobile.value,Email:Email.value,City:City.value,Picture:filename})
+        }
+        else if(btn.value=="UPDATE")
+        {
+            studentInfo[i].Name=Name.value
+            studentInfo[i].Email=Email.value
+            studentInfo[i].Mobile=Mobile.value
+            studentInfo[i].City=City.value
+            studentInfo[i].Picture=filename
+            btn.value="Save"
+          
+        }
+    }
+    else{
+        alert("Please fill all field..")
+    }
+        Name.value=""
+        Email.value=""
+        City.value=""
+        Mobile.value=""
+        Picture.value=""
+
+
+         showData()
+        }
+        function showData()
+        {
+            var res="<table class='table table-stripted'><tr class='text-bg-success'><th>Sr No</th><th>Name</th><th>Mobile</th><th>Email</th><th>City</th><th>Picture</th><th>Edit Record</th><th>Delete Record</th></tr>"
+                var sr=0;
+                studentInfo.forEach((Data)=>{
+                    sr++;
+                    res+=`
+                    <tr>
+                        <td>${sr}</td>
+                    <td>${Data.Name}</td> 
+                    <td>${Data.Mobile}</td> 
+                    <td>${Data.Email}</td> 
+                    <td>${Data.City}</td> 
+                    <td><img src='images/${Data.Picture}' height='40'/></td> 
+                    <td><button class='btn btn-warning' onclick='edit(this)'>Edit</button></td>
+                    <td><button class='btn btn-danger' onclick='remove(this)'>Delete</button></td>
+                    </tr>
+                    `
+                })
+                res+="</table>"
+                document.querySelector("#t").innerHTML=res
+
+        }
+        function remove(x)
+        {
+    var itoDelete=x.parentElement.parentElement.firstElementChild.innerText-1
+    var status=confirm("Are you sure want to delete record ?")
+    if(status==true)
+    {
+    studentInfo.splice(itoDelete,1)
+    }
+    //console.log(studentInfo.length)
+    showData()
+
+        }
+       // [{},{}]
+
+        function edit(x)
+        {
+        i=x.parentElement.parentElement.firstElementChild.innerText-1//1
+        btn.value="UPDATE"
+        Name.value=studentInfo[i].Name
+        Email.value=studentInfo[i].Email
+        Mobile.value=studentInfo[i].Mobile
+        City.value=studentInfo[i].City
+        document.querySelector("#im").src=`images/${studentInfo[i].Picture}`
+        }
+        
+
+    
+
+    </script>
+</body>
+</html>
+
+<!-- var str="C:\fakepath\k6.jpg"
+var x=str.split('\')//["C:","fakepath","k6.jpg"]
+x.pop()//k6.jpg
+
+str.slice(str.lastIndexOf('\')+1)//k6.jpg -->
+
+

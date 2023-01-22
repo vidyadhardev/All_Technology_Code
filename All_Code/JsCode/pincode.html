@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+Pincode<br/>
+<input type="number" onkeyup="demo()"/>
+<b>Message</b>
+<script>
+function demo()
+{
+var t=document.querySelector("input")
+var msg=document.querySelector("#msg")
+if(t.value.length==6)
+{
+msg.innerText="Vailed Code..."
+t.style.border="2px double green"
+msg.style.color="green"
+}
+else(t.value.Text.length!=6)
+{
+msg.innerText="Not Vailed Code"
+t.style.border="2px double red"
+msg.style.color="red"
+}
+}
+</script>
+</body>
+
+
+</html>

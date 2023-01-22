@@ -1,0 +1,113 @@
+<html>
+    <head>
+<style>
+
+#box
+{
+width: 350px;
+background:linear-gradient(45deg,blue,rgb(99, 189, 225)); 
+padding: 15px;
+min-height: 200px;
+box-sizing: border-box;
+margin: 80px auto;
+font-size: 20px;
+color: rgb(14, 11, 11);
+border-radius: 15px;
+}
+.txt
+{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+.btn
+{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+
+}
+#header
+{
+    height: 35px;
+    width: 320px;
+    text-align: center;
+}
+#left
+{
+    width: 160;
+    height: 45px;
+    float: left;
+}
+#rigth
+{
+    width: 160;
+    height: 45px;
+    float: left;
+}
+</style>
+    
+    </head>
+    <body>
+   <div id="box">
+    <div id="header">
+        <div id="left"  onclick="demo1()">Loging</div>
+        <div id="rigth"onclick="demo()">Registration</div>
+    </div> 
+    
+        <p id="reg" >
+            <div>Register</div> <br>
+        Name<br/><input type="text" placeholder="Name..." class="txt"><br/>
+        mobile<br/><input type="number" placeholder="mobile number..." class="txt"><br/>
+        Email<br/><input type="email" placeholder="username..." class="txt"><br/>
+    <br><button class="btn">Register</button>
+    </p><br>
+    <div>Login</div>
+    <p id="log" >
+        username<br/><input type="text" placeholder="Name..." class="txt"><br/>
+        password<br/><input type="password" placeholder="password..." class="txt"><br/>
+       <br><input type="button" value="Login" class="btn">
+    
+    </p><br>
+
+
+
+    <p id="fpass"  onclick="demo2()"> 
+        <div>Forget password</div><br>
+        username<br/><input type="text" placeholder="Name..." class="txt"><br/>
+        mobile No.<br/><input type="password" placeholder="enter no...." class="txt"><br/>
+       <br><input type="button" value="Forget" class="btn">
+    </p>
+  
+   
+   </div>
+  <script>
+var lg=document.getElementById("login")
+var rg=document.getElementById("reg")
+var fp=document.getElementById("fpass")
+function demo()
+{
+rg.style.display="none"
+lg.style.display="block"
+fp.style.display="none"
+}
+function demo1()
+{
+lg.style.display="block"
+rg.style.display="none"
+fp.style.display="none"
+}
+function demo2()
+{
+fp.style.display="block"
+lg.style.display="none"
+rg.style.display="none"
+}
+  </script>
+    </body>
+</html>
