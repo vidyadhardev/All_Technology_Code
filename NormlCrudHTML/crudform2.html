@@ -1,0 +1,167 @@
+<html>
+<head>
+<link href="./css/bootstrap.css" rel="stylesheet" />
+<link href="./css/all.css" rel="stylesheet"/>
+<style>
+.outer
+{
+min-height:400px;
+background:#f8f9fb;
+}
+.a
+{
+min-height:350px;
+background:#f8f9fb;
+border:1px solid grey;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid outer p-5">
+<div class="row">
+<div class="col-sm-12"></div>
+<p class="text-center fs-3 mb-3"> <b class="text-warning">Contact </b>With Us</p>
+<hr style="height:2.5px; width:100px;border:none; margin-left:540px; box-sizing:border-box;" class="bg-warning" />
+<p class="text-center">You may contact us by contact number or filling in this form any time you need professional<br/> support or have any question</p>
+</div>
+<div class="row">
+<div class="col-sm-7  outer bg-white ps-5">
+<p class="p-4">Send Your Message</p>
+<div class="row">
+<div class="col-sm-6">
+Your Name:<input type="text" placeholder="Enter your name" class="form-control " id="name"/>
+</div>
+<div class="col-sm-6">
+Your Contact:<input type="number" placeholder="Enter your contact number" id="your" class="form-control  mb-3"/>
+</div>
+</div>
+Your Email:<input type="email" placeholder="Enter your email" class="form-control mb-3" id="email"/>
+Your Message:<textarea placeholder="Type your Message here" class="form-control" id="text"></textarea></br></br>
+<input type="button" value="send message" class="btn btn-outline-warning" id="btn" onclick="add(),addData()"/>
+</div>
+<div class="col-sm-5 outer bg-white p-5">
+<div class="row">
+<div class="col-sm-12 a ">
+<p class="mt-4">Contact Info</p>
+<hr style="height:2.5px; width:50px; border:none;  box-sizing:border-box;" class="bg-warning" />
+<div class="row">
+<div class="col-sm-2">
+<i class="fa-solid fa-location-dot text-warning"></i>
+</div>
+<div class="col-sm-10"><p class="text-warning">Office address</p>
+<p class="pe-5">Plot No-44,Behind H P Petrol Pump,Tedhi Puliya Ring Rd,sector 5,Vikas Nagar,Lucknow Uttar Pradesh 226022</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2">
+<i class="fa-solid fa-phone text-warning"></i>
+</div>
+<div class="col-sm-10">
+<p class="text-warning">Call Us</p>
+<p>+7007237006<br/>
++91 8052978684
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2">
+<i class="fa-solid fa-envelope text-warning"></i>
+</div>
+<div class="col-sm-10">
+<p class="text-warning">Mail Us</p>
+<p>techpilelko@gmail.com<br/>
+hr@techpile.in
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="t"></div>
+</div>
+<script>
+     var details=[];
+     var Name=document.querySelector("#name");
+     var Contact=document.querySelector("#your")
+     var Email=document.querySelector("#email")
+     var Text1=document.querySelector("#text")
+     var btn=document.querySelector("#btn")
+
+     function add()
+        {
+            if(Name.value!="")
+            {
+                if(btn.value=="send message")
+                {
+                  details.push({Name:Name.value,Contact:Contact.value,Email:Email.value,Text:Text1.value})
+                }
+                else if(btn.value=="Update")
+                {
+                    details[i].Name=Name.value
+                    details[i].Email=Email.value
+                    details[i].Contact=Contact.value
+                    details[i].Text1=Text1.value
+                    btn.value="send message"
+                }
+            }
+            else
+            {
+                alert("Please fill the all field....")
+            }
+            Name.value=""
+            Email.value=""
+            Contact.value=""
+            Text1.value=""
+
+            addData()
+
+        }
+     
+     function addData()
+
+        {       var sr=0;
+                var res="<table class='table table-stripted'><tr class='text-bg-dark'><th>Sr No</th><th>Name</th><th>Contact</th> <th>Email</th> <th>TextArea</th><th>Edit</th><th>Delete</th></tr>"
+                details.forEach((data)=>
+                {   sr++;
+                    res+=`
+                    <tr>
+                    <td>${sr}</td>
+                    <td>${data.Name}</td>    
+                    <td>${data.Contact}</td>    
+                    <td>${data.Email}</td>    
+                    <td>${data.Text}</td> 
+                    <td><button class='btn btn-danger' onclick='edit(this)'>Edit</button></td>
+                    <td><button class='btn btn-warning' onclick='Delete(this)'>Delete</button></td> 
+                    </tr>`
+                    })
+                    res+="</table>"
+                    document.querySelector("#t").innerHTML=res;
+                }
+                
+        function Delete(a)
+        {
+         var idelete=a.parentElement.parentElement.firstElementChild.innerText-1;
+         var status=confirm("Are you sure to delete this ?")
+         if(status==true)
+         {
+            details.splice(idelete,1)
+         }
+          
+
+         addData()
+        }
+        function edit(y)
+        {
+            i=y.parentElement.parentElement.firstElementChild.innerText-1
+            btn.value="Update"
+            Name.value=details[i].Name
+            Contact.value=details[i].Contact
+            Email.value=details[i].Email
+            Text1.value=details[i].Text
+           
+            
+        }
+</script>
+</body>
+</html>

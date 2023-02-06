@@ -1,0 +1,187 @@
+<html>
+<head>
+<link href="./css/bootstrap.css" rel="stylesheet" />
+<link href="./css/all.css" rel="stylesheet"/>
+<title>CRUD Of FORM</title>
+<style>
+.login
+{
+min-height:400px;
+background:#e8ecef;
+}
+</style>
+</head>
+<body>
+<div class="row">
+<div class="col-sm-6 login mx-auto mt-5">
+<p class="h3 text-center">Register <b class="text-warning"> with us </b></p>
+Enroll No:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa fa-pencil"></i>
+<input type="number" placeholder="TPT-ST20"   class="form-control" id="roll"/></div>
+Today is:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa fa-calendar"></i>
+<input type="date"  class="form-control" id="today"/></div>
+Name:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa-solid fa-user"></i>
+<input type="text" placeholder="username"   class="form-control" id="name"/></div>
+Apply for:
+<div class="input-group ">
+<i class="input-group-text text-secondary   fa fa-pencil"></i>
+<select class="form-control" id="select">
+<option>select Training Name</option>
+<option>Summer Training</option>
+<option>Appernticship</option>
+<option>Industrial Training</option></select></div>
+College Name:
+<div class="input-group ">
+<i class="input-group-text text-secondary  fa-regular fa-building-columns"></i>
+<input type="text"    class="form-control" id="cname"/></div>
+Course:
+<div class="input-group ">
+<i class="input-group-text text-secondary  fa-solid fa-display"></i>
+<select class="form-control">
+<option>select your course</option>
+<option id="cselect">Diploma</option>
+<option>Btech</option>
+<option>Mtech</option></select></div>
+Year:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa-regular fa-clock"></i>
+<input type="text"  placeholder="your pursuing year"  class="form-control" id="year"/>
+</div>
+Contact No:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa-solid fa-phone-flip"></i>
+<input type="number"  placeholder="Mobile No"  class="form-control" id="contact"/>
+</div>
+Email Id:
+<div class="input-group ">
+<i class="input-group-text text-secondary fa-regular fa-envelope"></i>
+<input type="email"  placeholder="Email Id"  class="form-control" id="email"/>
+</div>
+Amount To Pay:
+<div class="input-group ">
+<i class="input-group-text text-secondary  fa-solid fa-indian-rupee-sign"></i>
+<input type="text"  class="form-control" id="pay"/>
+</div><br/>
+<input type="button" value="Register" onclick="add(),addData()" class="btn btn-warning mb-4" id="btn" />
+</div>
+<div id="t"></div>
+</div>
+<script>
+        var details=[];
+        var Enroll=document.querySelector("#roll")
+        var Today=document.querySelector("#today")
+        var Name=document.querySelector("#name")
+        var Select=document.querySelector("#select")
+        var College=document.querySelector("#cname")
+        var Cselect=document.querySelector("#cselect")
+        var Year=document.querySelector("#year")
+        var Contact=document.querySelector("#contact")
+        var Email=document.querySelector("#email")
+        var Pay=document.querySelector("#pay")
+        var btn=document.querySelector("#btn")
+
+        function add()
+        {
+            if(Name.value!="")
+            {
+                if(btn.value=="Register")
+                {
+                    details.push({Enroll:Enroll.value,Today:Today.value,Name:Name.value, Select:Select.value, College:College.value, Cselect:Cselect.value, Year:Year.value, Contact:Contact.value, Email:Email.value, Pay:Pay.value})
+                }
+                else if(btn.value=="Update")
+                {
+                    details[i].Enroll=Enroll.value
+                    details[i].Today=Today.value
+                    details[i].Name=Name.value
+                    details[i].Select=Select.value
+                    details[i].College=College.value
+                    details[i].Cselect=Cselect.value
+                    details[i].Year=Year.value
+                    details[i].Contact=Contact.value
+                    details[i].Email=Email.value
+                
+                    details[i].Pay=Pay.value
+                    btn.value="Register"
+                }
+            }
+            else
+            {
+                alert("Please fill the all field....")
+            }
+             Name.value=""
+             Enroll.value=""
+             Today.value=""
+             Select.value=""
+             College.value=""
+             Cselect.value=""
+            Email.value=""
+             Pay.value=""
+            Contact.value=""
+            Year.value=""
+            //console.log(details)
+           addData()
+
+        }
+
+        
+        function addData()
+        {       var sr=0;
+                var res="<table class='table table-stripted'><tr class='text-bg-dark'><th>Sr No</th><th>Enroll</th><th>Today</th> <th>Name</th> <th>Select</th><th>College</th><th>Cselect</th><th>Year</th><th>Contact</th><th>Email</th><th>Pay</th><th>Edit</th><th>Delete</th></tr>"
+                details.forEach((data)=>
+                {   sr++;
+                    res+=`
+                    <tr>
+                    <td>${sr}</td>
+                    <td>${data.Enroll}</td>    
+                    <td>${data.Today}</td>    
+                    <td>${data.Name}</td>    
+                    <td>${data.Select}</td>    
+                    <td>${data.College}</td>    
+                    <td>${data.Cselect}</td>    
+                    <td>${data.Year}</td>    
+                    <td>${data.Contact}</td>    
+                    <td>${data.Email}</td>    
+                    <td>${data.Pay}</td>    
+                    <td><button class='btn btn-danger' onclick='edit(this)'>Edit</button></td>
+                    <td><button class='btn btn-warning' onclick='Delete(this)'>Delete</button></td>    
+                    </tr>
+                    `
+                })
+                res+="</table>"
+                document.querySelector("#t").innerHTML=res;
+        }
+        function Delete(a)
+        {
+         var idelete=a.parentElement.parentElement.firstElementChild.innerText-1;
+         var status=confirm("Are you sure to delete this ?")
+         if(status==true)
+         {
+            details.splice(idelete,1)
+         }
+         addData()
+        }
+        function edit(y)
+        {
+            i=y.parentElement.parentElement.firstElementChild.innerText-1
+            btn.value="Update"
+            Enroll.value=details[i].Enroll
+            Today.value=details[i].Today
+            Name.value=details[i].Name
+            Select.value=details[i].Select
+            College.value=details[i].College
+            Cselect.value=details[i].Cselect
+            Year.value=details[i].Year
+            Contact.value=details[i].Contact
+            Email.value=details[i].Email
+            Pay.value=details[i].Pay
+           
+            
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+<head>
+<style>
+#outer
+{
+ height:740px;
+ width:1500px;
+ /* border:2px solid black; */
+ /* //border-radius:20px; */
+ background:linear-gradient(45deg,orange,yellow);
+ margin:0px auto;
+}
+#head
+{
+height:100px;
+width:1000px;
+font-size:50px;
+text-align:center;
+color:black;
+padding:10px;
+box-sizing:border-box;
+}
+#left
+{
+height:410px;
+width:1000px;
+/* //border:2px solid black; */
+float:left;
+box-sizing:border-box;
+/* //border-radius:20px; */
+}
+#right
+{
+height:500px;
+width:500px;
+float:left;
+box-sizing:border-box;
+border-left:2px solid black;
+background:#e9ecef;
+margin-top:65px;
+font-size:20px;
+/* //text-align:center; */
+}
+.left
+{
+height:600px;
+width:500px;
+float:left;
+/* //border-radius:20px;
+//background:red; */
+box-sizing:border-box;
+border-left:2px solid white;
+
+}
+input
+{
+height:35px;
+width:98%;
+border-radius:10px;
+}
+::placeholder
+{
+color:maroon;
+font-size:15px;
+
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="head" style="text-align:center;">ENTER YOUR ALL DETAILS</div>
+<div id="left">
+<div class="left">
+<form>
+Name*:<br/>
+<input type="text" placeholder="Enter your name....." id="txt1"/>
+College*:<br/>
+<input type="text" placeholder="Enter your college name....." id="txt2"/>
+Father Name*:<br/>
+<input type="text" placeholder="Enter your father name....." id="txt3"/>
+Mother Name*:<br/>
+<input type="text" placeholder="Enter your mother name....." id="txt4"/>
+Address Village*:<br/>
+<input type="text" placeholder="Enter your village name....." id="txt5"/>
+Distic Address*:<br/>
+<input type="text"placeholder="Enter your distic name....." id="txt6"/>
+Courese*:<br/>
+<input type="text" placeholder="Enter your course name....." id="txt7"/>
+Tranining Center*:<br/>
+<input type="text" placeholder="Enter your traniing ceter name....." id="txt8"/>
+center address*:<br/>
+<input type="text" placeholder="Enter your center address name....." id="txt9"/>
+Teacher Name*:<br/>
+<input type="text" placeholder="Enter your cteacher name....." id="txt10"/>
+Total Student*:<br/>
+<input type="text" placeholder="Enter your total student....." id="txt11"/>
+</form>
+</div>
+<div class="left">
+<form>
+Satate Name*:<br/>
+<input type="text" placeholder="Enter your satate....." id="txt12"/>
+Bother Name*:<br/>
+<input type="text" placeholder="Enter your bother name....." id="txt13"/>
+Companey Name*:<br/>
+<input type="text" placeholder="Enter your companey name....." id="txt14"/>
+Friends Name*:<br/>
+<input type="text" placeholder="Enter your friends name....." id="txt15"/>
+Address Marker*:<br/>
+<input type="text" placeholder="Enter your Market name....." id="txt16"/>
+Distic Address*:<br/>
+<input type="text"placeholder="Enter your distic name....." id="txt17"/>
+Courese Diploma*:<br/>
+<input type="text" placeholder="Enter your course Diploma name....." id="txt18"/>
+Tranining Center*:<br/>
+<input type="text" placeholder="Enter your traniing ceter name....." id="txt19"/>
+center address*:<br/>
+<input type="text" placeholder="Enter your center address name....." id="txt20"/>
+Teacher Name*:<br/>
+<input type="text" placeholder="Enter your cteacher name....." id="txt21"/>
+Total Student*:<br/>
+<input type="text" placeholder="Enter your total student....." id="txt22"/>
+</form>
+</div>
+<input type="submit" value="SUBMIT" style="width:500px;margin-left:250px; background:green" onclick="myfun()"/>
+</div>
+<div id="right"><b style="color:maroon;font-size:30px; text-align:center;">RECORD ALL DETAILS</b></div>
+
+</div>
+<script>
+function myfun()
+{
+  var obj=document.querySelector("#right");
+  var x1=document.querySelector("#txt1").value;
+  var x2=document.querySelector("#txt2").value;
+  var x3=document.querySelector("#txt3").value;
+  var x4=document.querySelector("#txt4").value;
+  var x5=document.querySelector("#txt5").value;
+  var x6=document.querySelector("#txt6").value;
+  var x7=document.querySelector("#txt7").value;
+  var x8=document.querySelector("#txt8").value;
+  var x9=document.querySelector("#txt9").value;
+  var x10=document.querySelector("#txt10").value;
+  var x11=document.querySelector("#txt11").value;
+  var x12=document.querySelector("#txt12").value;
+  var x13=document.querySelector("#txt13").value;
+  var x14=document.querySelector("#txt14").value;
+  var x15=document.querySelector("#txt15").value;
+  var x16=document.querySelector("#txt16").value;
+  var x17=document.querySelector("#txt17").value;
+  var x18=document.querySelector("#txt18").value;
+  var x19=document.querySelector("#txt19").value;
+  var x20=document.querySelector("#txt20").value;
+  var x21=document.querySelector("#txt21").value;
+  var x22=document.querySelector("#txt22").value;
+  obj.innerHTML="Name: "+x1+"<br/>Father Name: "+x2+"<br/>Mothe Name: "+x3+"<br/> Your Village: "+x4+"<br/>Your Distic: "+x5+
+  "<br/>Your Distic: "+x6+"<br/>couese: "+x7+"<br/>Tranining Center: "+x8+"<br/>center address: "+x9+
+  "<br/>Teacher Name: "+x10+"<br/>Total Student: "+x11+"<br/>Satate Name: "+x12+"<br/>Bother Name: "+x13+"<br/>Companey Name: "+x14+
+  "<br/>Friends Name: "+x15+"<br/>Address Marker: "+x16+"<br/>Distic Address: "+x17+"<br/>Courese Diploma: "+x18+
+  "<br/>Tranining Center: "+x19+"<br/>center address: "+x20+"<br/>Teacher Name: "+x21+"<br/>Total Student: "+x22;
+}
+</script>
+</body>
+</html>

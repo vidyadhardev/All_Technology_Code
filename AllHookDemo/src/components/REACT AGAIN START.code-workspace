@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../self"
+		},
+		{
+			"path": "../../../Hooks_Demo/Hooks_Demo"
+		}
+	],
+	"settings": {}
+}
