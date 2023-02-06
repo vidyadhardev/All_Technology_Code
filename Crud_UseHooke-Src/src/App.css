@@ -1,0 +1,41 @@
+ul li{
+    color: white ;
+    background: black;
+    float: left;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 5px;
+   }
+   ul{
+    list-style: none;
+    margin-left:400px;
+
+   }
+   ul li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 22px;
+    line-height: 45px;
+   
+   }
+   ul li a:hover{
+    text-decoration: none;
+    color: rgb(233, 231, 237);
+    font-size: 22px;
+    background: rgb(201, 229, 74) !important;
+    line-height: 45px;
+   
+   }
+   ul li:hover{
+    color: rgb(214, 154, 154) ;
+    background: rgb(201, 229, 74);
+    float: left;
+    width: 220px;
+  
+    height: 45px;
+    text-align: center;
+    margin-left: 5px;
+   }
+   
