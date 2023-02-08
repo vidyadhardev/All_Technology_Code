@@ -1,0 +1,86 @@
+                                              JS Interview Question Recap
+
+                                     Most question & answer in JavaScript for interview creck
+
+1) What is JavaScript and why is it used?
+JavaScript is a high-level, dynamic, and interpreted programming language used primarily for creating interactive web pages. It is used to add interactivity to websites, 
+including form validation, animation, and dynamic content updates.
+
+2) What are the data types in JavaScript?
+The data types in JavaScript include string, number, boolean, null, and undefined.
+
+3) What is the difference between null and undefined in JavaScript?
+Null and undefined are both values in JavaScript, but they have different meanings. Undefined means a variable has been declared but has not been assigned a value, 
+while null means a value has been explicitly set to nothing.
+
+4) How does the == operator differ from the === operator in JavaScript?
+The == operator compares the values of two variables, while the === operator compares the values and data types of two variables. The === operator is more strict and is 
+recommended for use in JavaScript code.
+
+5) What is an event in JavaScript?
+An event in JavaScript is an action or occurrence that triggers a function to be executed. Examples of events include a button click, a page load, or a mouse hover.
+
+6) What is closure in JavaScript?
+A closure in JavaScript is a function that has access to its outer scope even after the outer function has returned. This allows the inner function to maintain a 
+reference to its outer scope, even if the outer function is no longer in scope.
+
+7) How do you create an object in JavaScript?
+An object in JavaScript can be created using object literal notation, using the object constructor, or using an object factory. The most common way is to use object 
+literal notation, where an object is defined using curly braces {} and properties are defined using key-value pairs.
+
+8) What is the difference between an object and an array in JavaScript?
+An object in JavaScript is a collection of key-value pairs, while an array is a collection of ordered values. Arrays have a length property and can be accessed using
+ index numbers, while objects do not have a length property and are accessed using their keys.
+
+9) What is the difference between var, let, and const in JavaScript?
+Var, let, and const are all ways to declare variables in JavaScript, but they have different scopes and behaviors. Var is function scoped and can be redefined and 
+re-declared, while let and const are block scoped and cannot be re-declared within the same block. Const is also block scoped, but the value of a const cannot be 
+changed after it is declared.
+
+10) How do you make an HTTP request in JavaScript?
+An HTTP request in JavaScript can be made using the XMLHttpRequest object or the fetch API. The XMLHttpRequest object provides a way to send and receive data between a 
+client and a server, while the fetch API is a more modern alternative that uses promises and is easier to use.
+
+
+
+
+
+                                          HTML CSS Interview Questions
+                                       Html css interview questions with example
+
+Here are some common HTML/CSS interview questions with example answers:
+
+1) What is HTML and CSS, and how do they differ?
+
+HTML (Hypertext Markup Language) is a markup language used to structure content on the web, while CSS (Cascading Style Sheets) is a style sheet language used to 
+present that content in a visually appealing way. HTML defines the structure and content of a web page, while CSS defines the styling and layout.
+Can you explain the box model in CSS?
+
+The CSS box model refers to the way CSS calculates the size and dimensions of an HTML element. It consists of the content, padding, border, and margin, all of which
+ contribute to the total width and height of an element.
+2) How would you center an element horizontally on a web page using CSS?
+
+To center an element horizontally, you can set its width and use the margin: auto property to automatically calculate the left and right margins, like this:
+
+div {
+  width: 50%;
+  margin: 0 auto;
+}
+3) Can you explain the "float" property in CSS?
+The float property is used to float an element to the left or right of its parent container, allowing text or other elements to wrap around it. It is commonly used to 
+create multi-column layouts. For example:
+
+img {
+  float: right;
+}
+4) How would you make a responsive web page using CSS?
+To make a responsive web page, you can use media queries to apply different styles based on the size of the viewport.
+ For example:
+
+@media only screen and (max-width: 600px) {
+  /* styles for screens with width up to 600px */
+}
+
+@media only screen and (min-width: 600px) {
+  /* styles for screens with width greater than 600px */
+}"

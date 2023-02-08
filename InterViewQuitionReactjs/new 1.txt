@@ -1,0 +1,96 @@
+                                                          ReactJS Interview Question List
+
+
+
+1) What is ReactJS and why do we use it?
+
+ReactJS is a JavaScript library used for building user interfaces. It is used to create reusable UI components, and it provides a virtual DOM that makes updates and rendering more efficient. 
+We use ReactJS because it helps in building complex and dynamic web applications with ease, and it helps in improving the overall performance and user experience of the application.
+
+2) What are the advantages of using ReactJS?
+Reusable components
+Virtual DOM for efficient updates and rendering
+Easy to learn and use
+High performance and fast rendering
+Easy integration with other libraries and technologies
+Good community support and resources.
+
+3) What are the components in ReactJS?
+ReactJS components are the building blocks of a React application. There are two types of components: class components and functional components. Class components use class syntax, 
+and functional components use function syntax.
+
+4) What is the virtual DOM in ReactJS?
+The virtual DOM is a lightweight in-memory representation of the actual DOM. ReactJS updates the virtual DOM instead of directly updating the real DOM, 
+which makes updates and rendering much faster and more efficient.
+
+5) How do you pass data between components in ReactJS?
+Data can be passed between components in ReactJS using props (properties). Props are read-only, and they are passed down from a parent component to a child component.
+
+6) What is the use of the state in ReactJS?
+The state in ReactJS is an object that stores dynamic data, and it is used to manage the state of a component. The state is updated using setState, 
+and the component re-renders when the state changes.
+
+7) What is the difference between props and state in ReactJS?
+Props are properties that are passed down from a parent component to a child component. They are read-only and cannot be changed. The state is an object that stores dynamic data,
+ and it is used to manage the state of a component. The state can be updated using setState, and the component re-renders when the state changes.
+
+8) What is a component lifecycle in ReactJS?
+The component lifecycle in ReactJS refers to the different phases a component goes through from its creation to destruction. It includes mounting, updating, 
+and unmounting phases, and each phase has different methods that are called during that phase.
+
+9) What is the use of Redux in ReactJS?
+Redux is a state management library that is often used with ReactJS. It helps to manage the state of a complex application and ensures that the state is consistent 
+and predictable.
+
+10) What is the difference between props and context in ReactJS?
+Props are properties that are passed down from a parent component to a child component. Context is a way to pass data through the component tree without having to pass props
+ down manually at every level. It is often used for global data that needs to be accessed by many components in the application.
+ 
+ 
+
+
+
+11) What is the difference between state and props in ReactJS?
+Answer: Props are used to pass data from a parent component to a child component, whereas state is used to store and manage the component's internal state.
+ Props are read-only and cannot be changed within the component, whereas state can be changed and updated by the component.
+
+12) What is the use of React Hooks?
+Answer: React Hooks are a way to add state and other features to functional components in ReactJS. They allow developers to manage state and other component logic 
+in a more concise and effective manner, without having to write class-based components.
+
+13) What is the role of Redux in ReactJS?
+Answer: Redux is a popular state management library that can be used with ReactJS. It provides a centralized store for all the application's data and allows developers 
+to manage the state of the application more efficiently and effectively.
+
+14) What is server-side rendering in ReactJS?
+Answer: Server-side rendering is a technique in which the initial rendering of a ReactJS application is done on the server, rather than in the client browser. 
+This results in faster initial loading times, improved SEO optimization, and better performance for slow internet connections.
+
+15) How can you optimize the performance of a ReactJS application?
+Answer: Some of the ways to optimize the performance of a ReactJS application include using efficient and optimized components, using the Virtual DOM, 
+using server-side rendering, using lazy loading for images, and using optimized CSS and JavaScript.
+
+16) What is the difference between ReactJS and AngularJS?
+Answer: ReactJS is a library for building user interfaces, whereas AngularJS is a complete framework for building web applications. ReactJS is more flexible and offers better 
+performance, while AngularJS has a larger community and more built-in features. Both have their own strengths and weaknesses, and the choice depends on the specific requirements 
+of the project.
+
+17) What is the role of JSX in ReactJS?
+Answer: JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their ReactJS components. It makes the code more readable and helps 
+to simplify the process of building UI components."
+
+18) How do you handle events in ReactJS?
+Ans: ReactJS handles events using event handlers. Event handlers are functions that are triggered when a specific event occurs, such as a button click. 
+Event handlers are passed as props to a component, and they can be triggered by calling the function inside the component.
+
+19) What is the use of the React DOM library?
+Ans: The React DOM library is used to interact with the actual DOM in the browser. It provides functions for creating, updating, and manipulating elements in the DOM, 
+and it also ensures efficient updates and rendering of the UI. The React DOM library is essential for using ReactJS to build user interfaces.
+
+20) How does ReactJS handle forms and input elements?
+Ans: ReactJS handles forms and input elements using controlled components. A controlled component is a component that is controlled by React and its state. 
+The state is updated when the value of an input element changes, and the component re-renders with the updated value. This allows for efficient and seamless handling of form inputs in ReactJS.
+
+21) What is the use of Redux in ReactJS?
+Ans: Redux is a state management library that is commonly used with ReactJS. It allows for centralizing the state of a React application and providing a unified way of 
+updating and accessing the state. Redux makes it easier to manage and maintain the state of a React application, especially in large and"
